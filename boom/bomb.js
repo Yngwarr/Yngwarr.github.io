@@ -1,7 +1,7 @@
 javascript:(
 	function()
 	{
-		var div = document.querySelector('.tab-container');
+		var div = document.querySelector('.page-container');
 		div.innerHTML = '<div style="position: absolute; width: 100vw; height: 10vw; opacity: 0.5; top: 0; "><iframe src="http://yngwarr.github.io/boom/" style="width: 100%; height: 100%"></iframe></div>'
 			+ div.innerHTML;
 
