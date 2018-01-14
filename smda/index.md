@@ -478,11 +478,11 @@ display(Math(r'\left|\frac{X^TX}{tr(X^TX)}\right|='+fl(np.linalg.det((X.T*X)/(X.
 ```
 
 
-$$|X^TX|=1.6653e+08$$
+|X^TX| = 1.6653e+08
 
 
 
-$$\left|\frac{X^TX}{tr(X^TX)}\right|=9.8668e-05$$
+|X^TX / tr(X^TX)| = 9.8668e-05$$
 
 
 ### Минимальное собственное значение информационной матрицы
@@ -494,7 +494,7 @@ display(Math(r'\lambda\min(X^TX)=' + fl(min(eig))))
 ```
 
 
-$$\lambda\min(X^TX)=14.035$$
+lambda min(X^TX) = 14.035
 
 
 ### Мера обусловленности матрицы по Нейману-Голдстейну
@@ -505,7 +505,7 @@ display(Math(r'\frac{\lambda_{max}}{\lambda_{min}}=' + fl(max(eig)/min(eig))))
 ```
 
 
-$$\frac{\lambda_{max}}{\lambda_{min}}=9.0463$$
+lambda_max / lambda_min = 9.0463
 
 
 ### Максимальная парная сопряжённость
@@ -548,7 +548,7 @@ display(Math(r'\max_{i,j;i\not=j}|r_{i,j}|=' + fl(mut_conj)))
 
 
 
-$$\max_{i,j;i\not=j}|r_{i,j}|=0.78784$$
+max_{i,j;i not = j} |r_{i,j}| = 0.78784
 
 
 ### Максимальная сопряжённость
@@ -561,11 +561,11 @@ display(Math(r'\max|R_i|='+fl(max([abs(c) for c in conj]))))
 ```
 
 
-$$R=(0.78784,0.011775,0.013084,0.78784)$$
+R = (0.78784,0.011775,0.013084,0.78784)
 
 
 
-$$\max|R_i|=0.78784$$
+max|R_i| = 0.78784
 
 
 Присутствует эффект мультиколлинеарности.
