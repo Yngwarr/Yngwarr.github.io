@@ -477,13 +477,11 @@ display(Math(r'|X^TX|='+fl(det)))
 display(Math(r'\left|\frac{X^TX}{tr(X^TX)}\right|='+fl(np.linalg.det((X.T*X)/(X.T*X).trace()))))
 ```
 
-
+```
 |X^TX| = 1.6653e+08
 
-
-
-|X^TX / tr(X^TX)| = 9.8668e-05$$
-
+|X^TX / tr(X^TX)| = 9.8668e-05
+```
 
 ### Минимальное собственное значение информационной матрицы
 
