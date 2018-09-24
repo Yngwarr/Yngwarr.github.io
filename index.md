@@ -1,13 +1,7 @@
 ---
-title: Где я и что я тут забыл?
+layout: default
+title: Homepage
 ---
+Hi! My name is Igor and I pronounce Yngwarr as "ingvar".
 
-### Навигация
-
-* [Вопросы для подготовки к магистратуре](master/)
-* [English vocabulary improver](vocab/)
-{% if site.posts %}
-{% for post in site.posts %}
-* {{ post.date | date: "%Y-%m-%d" }} [{{ post.title }}]({{ post.url }})
-{% endfor %}
-{% endif %}
+I'm a  programmer with a strong will to create games, use Linux and be awesome! =)
