@@ -1,5 +1,0 @@
-# Build settings
-markdown: kramdown
-timezone: Asia/Novosibirsk
-encoding: utf-8
-permalink: /:categories/:title/

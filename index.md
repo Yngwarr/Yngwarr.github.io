@@ -1,10 +1,7 @@
----
-layout: default
-title: Homepage
-ccmd: motd
----
+# hardweird.ru
 
-Hi! My name is Igor and I pronounce Yngwarr as "ingvar" with the first syllable stressed. Here's what I've got here:
+Howdy? My name is Igor and this will be my website.
 
-* [Blog]({{ site.url }}/blog/) with everything I found/did that may be any valuable for you.
-* [Games](https://yngwarr.itch.io/) I create for jams mostly.
+Here I plan to post game-related stuff like assets, thoughts and games themselves. Also, maybe some web-apps.
+
+For now you may enjoy the cleanness of the void or find something more interesting to do. Have a nice day!
