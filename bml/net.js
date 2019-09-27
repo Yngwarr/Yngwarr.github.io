@@ -14,8 +14,7 @@ function input_type(type) {
     return !!document.querySelector(`.answer input[type='${type}']`);
 }
 
-function main() 
-{
+function main() {
     let q_type = '';
     if (input_type('checkbox')) q_type = 'checkbox';
     else if (input_type('radio')) q_type = 'radio';
@@ -28,7 +27,7 @@ function main()
     //let as = [];
     
     if (q_type === 'text') {
-        document.querySelector(`.answer input[type='text']`).value = answers
+        document.querySelector(`.answer input[type='text']`).value = answers[q];
     }
 
     //if (q_type !== 'text') {
