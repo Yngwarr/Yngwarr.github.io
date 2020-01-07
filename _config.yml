@@ -1,5 +1,5 @@
 theme: jekyll-theme-hacker
 title: hardweird
-description: Just code and games.
+description: Just code and game development.
 
 permalink: /:categories/:year/:y_day/:title/
