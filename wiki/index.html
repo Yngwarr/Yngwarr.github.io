@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Igor's notes — on gamedev and stuff</title>
+<title>Yngvarr's notes — on gamedev and stuff</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -420,6 +420,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/centralised</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
+
+<li>$:/themes/tiddlywiki/tight</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
@@ -9709,8 +9711,8 @@ Error message and password prompt
 <div created="20200730102136521" modified="20200730102244841" title="$:/SiteSubtitle">
 <pre>on gamedev and stuff</pre>
 </div>
-<div created="20191022092701090" modified="20200730102239873" title="$:/SiteTitle">
-<pre>Igor's notes</pre>
+<div created="20191022092701090" modified="20200730120339948" title="$:/SiteTitle">
+<pre>Yngvarr's notes</pre>
 </div>
 <div created="20200730115143988" modified="20200730115146565" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
@@ -9730,14 +9732,14 @@ Error message and password prompt
 <div created="20200730102307565" modified="20200730102337561" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20191022100856634" modified="20200730115116008" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div created="20191022100856634" modified="20200730120504225" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Theme</pre>
 </div>
 <div created="20191022112836899" modified="20200730115048500" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20191022105641898" modified="20200730114706145" title="$:/state/tab--86143343">
-<pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
+<div created="20191022105641898" modified="20200730120542221" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Themes</pre>
 </div>
 <div created="20191022112849671" modified="20200730114630957" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/Stylesheets</pre>
@@ -9745,7 +9747,7 @@ Error message and password prompt
 <div created="20191022102052289" modified="20191022105437995" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Themes</pre>
 </div>
-<div created="20191022100847136" modified="20200730115113272" title="$:/state/tab-1749438307">
+<div created="20191022100847136" modified="20200730120546988" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20191022101053744" modified="20200730102045936" title="$:/state/tab-2065006209">
@@ -9754,7 +9756,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20200730102029467" list="[[Stick input strength]] [[Godot List]]" modified="20200730115248164" title="$:/StoryList">
+<div created="20200730120331833" list="$:/ControlPanel Hello!" modified="20200730120331833" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10580,10 +10582,10 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191022113611908" modified="20200730113535541" title="$:/temp/search">
 <pre></pre>
 </div>
-<div created="20191022105443815" modified="20191022105443815" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
+<div created="20200730120532503" modified="20200730120532503" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
 <pre>loaded</pre>
 </div>
-<div created="20191022100849465" modified="20191022105801403" title="$:/theme">
+<div created="20191022100849465" modified="20200730120600291" title="$:/theme">
 <pre>$:/themes/tiddlywiki/centralised</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/snowwhite" description="Centralises the story river" name="Centralised" plugin-type="theme" title="$:/themes/tiddlywiki/centralised" type="application/json" version="5.1.21">
@@ -10604,6 +10606,17 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
             &quot;title&quot;: &quot;$:/themes/tiddlywiki/snowwhite/base&quot;,
             &quot;tags&quot;: &quot;[[$:/tags/Stylesheet]]&quot;,
             &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n.tc-sidebar-header {\n\ttext-shadow: 0 1px 0 &lt;&lt;colour sidebar-foreground-shadow&gt;&gt;;\n}\n\n.tc-tiddler-info {\n\t&lt;&lt;box-shadow \&quot;inset 1px 2px 3px rgba(0,0,0,0.1)\&quot;&gt;&gt;\n}\n\n@media screen {\n\t.tc-tiddler-frame {\n\t\t&lt;&lt;box-shadow \&quot;1px 1px 5px rgba(0, 0, 0, 0.3)\&quot;&gt;&gt;\n\t}\n}\n\n@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {\n\t.tc-tiddler-frame {\n\t\t&lt;&lt;box-shadow none&gt;&gt;\n\t}\n}\n\n.tc-page-controls button svg, .tc-tiddler-controls button svg, .tc-topbar button svg {\n\t&lt;&lt;transition \&quot;fill 150ms ease-in-out\&quot;&gt;&gt;\n}\n\n.tc-tiddler-controls button.tc-selected,\n.tc-page-controls button.tc-selected {\n\t&lt;&lt;filter \&quot;drop-shadow(0px -1px 2px rgba(0,0,0,0.25))\&quot;&gt;&gt;\n}\n\n.tc-tiddler-frame input.tc-edit-texteditor {\n\t&lt;&lt;box-shadow \&quot;inset 0 1px 8px rgba(0, 0, 0, 0.15)\&quot;&gt;&gt;\n}\n\n.tc-edit-tags {\n\t&lt;&lt;box-shadow \&quot;inset 0 1px 8px rgba(0, 0, 0, 0.15)\&quot;&gt;&gt;\n}\n\n.tc-tiddler-frame .tc-edit-tags input.tc-edit-texteditor {\n\t&lt;&lt;box-shadow \&quot;none\&quot;&gt;&gt;\n\tborder: none;\n\toutline: none;\n}\n\ntextarea.tc-edit-texteditor {\n\tfont-family: {{$:/themes/tiddlywiki/vanilla/settings/editorfontfamily}};\n}\n\ncanvas.tc-edit-bitmapeditor  {\n\t&lt;&lt;box-shadow \&quot;2px 2px 5px rgba(0, 0, 0, 0.5)\&quot;&gt;&gt;\n}\n\n.tc-drop-down {\n\tborder-radius: 4px;\n\t&lt;&lt;box-shadow \&quot;2px 2px 10px rgba(0, 0, 0, 0.5)\&quot;&gt;&gt;\n}\n\n.tc-block-dropdown {\n\tborder-radius: 4px;\n\t&lt;&lt;box-shadow \&quot;2px 2px 10px rgba(0, 0, 0, 0.5)\&quot;&gt;&gt;\n}\n\n.tc-modal {\n\tborder-radius: 6px;\n\t&lt;&lt;box-shadow \&quot;0 3px 7px rgba(0,0,0,0.3)\&quot;&gt;&gt;\n}\n\n.tc-modal-footer {\n\tborder-radius: 0 0 6px 6px;\n\t&lt;&lt;box-shadow \&quot;inset 0 1px 0 #fff\&quot;&gt;&gt;;\n}\n\n\n.tc-alert {\n\tborder-radius: 6px;\n\t&lt;&lt;box-shadow \&quot;0 3px 7px rgba(0,0,0,0.6)\&quot;&gt;&gt;\n}\n\n.tc-notification {\n\tborder-radius: 6px;\n\t&lt;&lt;box-shadow \&quot;0 3px 7px rgba(0,0,0,0.3)\&quot;&gt;&gt;\n\ttext-shadow: 0 1px 0 rgba(255,255,255, 0.8);\n}\n\n.tc-sidebar-lists .tc-tab-set .tc-tab-divider {\n\tborder-top: none;\n\theight: 1px;\n\t&lt;&lt;background-linear-gradient \&quot;left, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.0) 100%\&quot;&gt;&gt;\n}\n\n.tc-more-sidebar &gt; .tc-tab-set &gt; .tc-tab-buttons &gt; button {\n\t&lt;&lt;background-linear-gradient \&quot;left, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 100%\&quot;&gt;&gt;\n}\n\n.tc-more-sidebar &gt; .tc-tab-set &gt; .tc-tab-buttons &gt; button.tc-tab-selected {\n\t&lt;&lt;background-linear-gradient \&quot;left, rgba(0,0,0,0.05) 0%, rgba(255,255,255,0.05) 100%\&quot;&gt;&gt;\n}\n\n.tc-message-box img {\n\t&lt;&lt;box-shadow \&quot;1px 1px 3px rgba(0,0,0,0.5)\&quot;&gt;&gt;\n}\n\n.tc-plugin-info {\n\t&lt;&lt;box-shadow \&quot;1px 1px 3px rgba(0,0,0,0.5)\&quot;&gt;&gt;\n}\n&quot;
+        }
+    }
+}</pre>
+</div>
+<div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Tightly packed theme" name="Tight" plugin-type="theme" title="$:/themes/tiddlywiki/tight" type="application/json" version="5.1.21">
+<pre>{
+    &quot;tiddlers&quot;: {
+        &quot;$:/themes/tiddlywiki/tight/base&quot;: {
+            &quot;title&quot;: &quot;$:/themes/tiddlywiki/tight/base&quot;,
+            &quot;tags&quot;: &quot;[[$:/tags/Stylesheet]]&quot;,
+            &quot;text&quot;: &quot;\\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline\n\n@media (max-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {\n}\n\n@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {\n\n\thtml body.tc-body {\n\t\tfont-size: 13px;\n\t\tline-height: 16px;\n\t}\n\n\thtml body.tc-body h1,\n\thtml body.tc-body h2,\n\thtml body.tc-body h3,\n\thtml body.tc-body h4,\n\thtml body.tc-body p {\n\t\tmargin-top: 0.3em;\n\t\tmargin-bottom: 0.3em;\n\t}\n\n\thtml body.tc-body code {\n\t\tfont-size: 0.8em;\n\t}\n\n\thtml body.tc-body section.tc-story-river {\n\t\tpadding: 0px;\n\t}\n\n\thtml body.tc-body div.tc-tiddler-frame {\n\t\tpadding: 12px;\n\t}\n\n\thtml body.tc-body div.tc-sidebar-scrollable {\n\t\tpadding: 12px 0 12px 12px;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-subtitle {\n\t\tfont-size: 0.7em;\n\t\tfont-weight: 700;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-tags-wrapper {\n\t\tmargin: 0;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame button.tc-tag-label,\n\thtml body.tc-body .tc-tiddler-frame span.tc-tag-label {\n\t\tfont-size: 0.8em;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-tiddler-body h1 {\n\t\tfont-size: 1.5em;\n\t\tfont-weight: 500;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-tiddler-body h2 {\n\t\tfont-size: 1.3em;\n\t\tfont-weight: 500;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-tiddler-body h3 {\n\t\tfont-size: 1.2em;\n\t\tfont-weight: 500;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-tiddler-body h4 {\n\t\tfont-size: 1.1em;\n\t\tfont-weight: 500;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-improvement-banner {\n\t\tmargin-right: -15px;\n\t\tmargin-left: -10px;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-tiddler-info {\n\t    margin: 0 -13px 0 -13px;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-fold-banner {\n\t    width: 13px;\n\t    margin-left: -15px;\n\t}\n\n\thtml body.tc-body .tc-tiddler-frame .tc-unfold-banner {\n\t    margin-left: -13px;\n\t    margin-top: -4px;\n\t}\n\n}\n&quot;
         }
     }
 }</pre>
