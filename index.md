@@ -1,4 +1,4 @@
-Hi! My name is Igor and this is my personal web-site.
+Hi! My name is Igor.
 Here's some stuff by me you can find in the World Wide Web:
 
 * __I participate in [Ludum Dare](https://ldjam.com/users/yngvarr/).__
