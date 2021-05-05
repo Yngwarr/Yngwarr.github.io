@@ -25,6 +25,16 @@ Some of our favorite ones:
 [rb]: https://yngvarr.itch.io/remote-bot "Robots go wheeeeee!"
 [st]: https://yngvarr.itch.io/snaketris "Snakes and bricks?? On the same grid?!?!"
 
+My other hobby is creating one-page static sites on various occasions, including:
+
+* [Ludum Dare backlog][ldb] generated from lists of authors ([source][ldb-git]).
+* [Daily Game Idea Challenge][dgi] — an on-going personal challenge to prepare for the next Ludum Dares ([source][dgi-git]).
+
+[ldb]: https://hardweird.ru/ld-backlog/
+[ldb-git]: https://github.com/Yngwarr/ld-backlog
+[dgi]: https://hardweird.ru/daily-game-idea/
+[dgi-git]: https://github.com/Yngwarr/daily-game-idea
+
 <!--<iframe frameborder="0" src="https://itch.io/embed/201310?bg_color=8a8a8a&amp;fg_color=0d0d0d&amp;link_color=00045c&amp;border_color=333333" width="208" height="167"><a href="https://yngwarr.itch.io/snaketris">Snaketris by Yngwarr</a></iframe>-->
 
 <!--<iframe frameborder="0" src="https://itch.io/embed/249098?bg_color=000000&amp;fg_color=ffffff&amp;link_color=3d3d3d&amp;border_color=636363" width="208" height="167"><a href="https://yngwarr.itch.io/remote-bot">Remote Bot by Yngwarr</a></iframe>-->
