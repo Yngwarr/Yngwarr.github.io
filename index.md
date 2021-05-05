@@ -15,12 +15,12 @@ Some of our favorite ones:
   and platformers. This turned out to be more about tactics then reflexes or typing
   skills.
 
-![](https://img.itch.zone/aW1nLzI4NTE1MzAucG5n/180x143%23c/IY%2Fd29.png "Made with Godot")
+<!--![](https://img.itch.zone/aW1nLzI4NTE1MzAucG5n/180x143%23c/IY%2Fd29.png "Made with Godot")-->
 
 * [Snaketris][st] — curious, what it's like to play two different classic arcade
   games with a friend on the same field?  Well, you can try now! :)
 
-![](https://img.itch.zone/aW1hZ2UvMjAxMzEwLzEwODY0ODEucG5n/180x143%23c/FxMWE4.png "Made with Phaser.js")
+<!--![](https://img.itch.zone/aW1hZ2UvMjAxMzEwLzEwODY0ODEucG5n/180x143%23c/FxMWE4.png "Made with Phaser.js")-->
 
 [rb]: https://yngvarr.itch.io/remote-bot "Robots go wheeeeee!"
 [st]: https://yngvarr.itch.io/snaketris "Snakes and bricks?? On the same grid?!?!"
