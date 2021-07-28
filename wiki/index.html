@@ -10780,7 +10780,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20210313110603657" modified="20210313110656031" tags="tip git" title="Force push with lease">
 <pre>Instead of `git push --force` use `git push --force-with-lease`. It will prevent you from overriding other people's work.</pre>
 </div>
-<div created="20210728101610637" modified="20210728112033533" tags="unity brief" title="Game Architecture with Scriptable Objects">
+<div created="20210728101610637" modified="20210728112247956" tags="unity brief" title="Game Architecture with Scriptable Objects">
 <pre>A brief content of the [[&quot;Game Architecture with Scriptable Objects&quot; talk by Ryan Hipple|https://youtu.be/raQ3iHhE_Kk]].
 
 ! Engineering Pillars
@@ -10822,7 +10822,17 @@ public class FloatVariable : ScriptableObject {
     public float value;
 }
 ```
-</pre>
+
+```
+[Serializable]
+public class FloatReference {
+    public bool useConstant = true;
+    public float constValue;
+    public FloatVariable variable;
+
+    public float Value =&gt; useConstant ? constValue : variable.value;
+}
+```</pre>
 </div>
 <div created="20210313111101087" modified="20210728103040121" tags="links git" title="Git Links">
 <pre>* [[Squashing commits|http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html]]</pre>
