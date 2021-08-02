@@ -443,6 +443,8 @@ Error message and password prompt
 
 <li>Checkout previous branch</li>
 
+<li>Creating a scene from scratch</li>
+
 <li>Force push with lease</li>
 
 <li>Game Architecture with Scriptable Objects</li>
@@ -9806,7 +9808,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20210802080005942" list="[[Stage a part of the file]] Hello! [[Git Tips]] [[Apply patches automatically during rebase]] [[Unity Tips]]" modified="20210802083431231" title="$:/StoryList">
+<div created="20210802080005942" list="[[Creating a scene from scratch]] [[Unity Tips]] [[Batch-editing scenes]]" modified="20210802093031935" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10818,6 +10820,26 @@ To see a property's name, use //Shift+RMB -&gt; Print Property Path// on it in I
 </div>
 <div created="20210313110452104" modified="20210313110546504" tags="tip git" title="Checkout previous branch">
 <pre>`git checkout -` can be used to return to the previous branch the same way `cd -` works.</pre>
+</div>
+<div created="20210802093034150" modified="20210802093539940" tags="editor unity tip" title="Creating a scene from scratch" type="">
+<pre>Create a new scene:
+
+```
+var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene);
+```
+
+Instantiate a prefab:
+
+```
+var prefab = AssetDatabase.LoadAssetAtPath&lt;GameObject&gt;(&quot;Assets/Prefabs/Thing.prefab&quot;);
+PrefabUtility.InstantiatePrefab(prefab, scene);
+```
+
+Save the created scene:
+
+```
+EditorSceneManager.SaveScene(scene, &quot;Assets/Scenes/Scene.unity&quot;);
+```</pre>
 </div>
 <div created="20210313110603657" modified="20210313110656031" tags="tip git" title="Force push with lease">
 <pre>Instead of `git push --force` use `git push --force-with-lease`. It will prevent you from overriding other people's work.</pre>
