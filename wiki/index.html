@@ -473,6 +473,8 @@ Error message and password prompt
 
 <li>Simulating depth</li>
 
+<li>Stage a part of the file</li>
+
 <li>Stick input strength</li>
 
 <li>Strip EXIF data from JPEG file</li>
@@ -9804,7 +9806,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20210802080005942" list="[[Batch-editing scenes]] [[Changing serialized values with a script]] [[Adding menu item]] [[Working with selection]] [[Unity Tips]]" modified="20210802080030819" title="$:/StoryList">
+<div created="20210802080005942" list="[[Stage a part of the file]] Hello! [[Git Tips]] [[Apply patches automatically during rebase]] [[Unity Tips]]" modified="20210802083431231" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10881,7 +10883,7 @@ public class FloatReference {
 <div created="20210313111101087" modified="20210728103040121" tags="links git" title="Git Links">
 <pre>* [[Squashing commits|http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html]]</pre>
 </div>
-<div created="20210313110310544" modified="20210728102635870" tags="list git" title="Git Tips">
+<div created="20210313110310544" modified="20210802083427727" tags="list git" title="Git Tips">
 <pre>&lt;&lt;list-links &quot;[tag[git]tag[tip]]&quot;&gt;&gt;
 
 External links:
@@ -10946,6 +10948,32 @@ External links:
 </div>
 <div created="20200801083147740" modified="20200801083735361" tags="tip code godot" title="Simulating depth" type="text/vnd.tiddlywiki" url="https://youtu.be/UfKMgHbaGow?t=714">
 <pre>Just put your nodes into a ''YSort'' node and it will sort them relative to their (0, 0) point.</pre>
+</div>
+<div created="20210802083433252" modified="20210802083734669" tags="git tip" title="Stage a part of the file" url="https://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git">
+<pre>```
+git add --patch &lt;filename&gt;
+```
+
+Opitions:
+
+* `y` stage this hunk for the next commit
+* `n` do not stage this hunk for the next commit
+* `q` quit; do not stage this hunk or any of the remaining hunks
+* `a` stage this hunk and all later hunks in the file
+* `d` do not stage this hunk or any of the later hunks in the file
+* `g` select a hunk to go to
+* `/` search for a hunk matching the given regex
+* `j` leave this hunk undecided, see next undecided hunk
+* `J` leave this hunk undecided, see next hunk
+* `k` leave this hunk undecided, see previous undecided hunk
+* `K` leave this hunk undecided, see previous hunk
+* `s` split the current hunk into smaller hunks
+* `e` manually edit the current hunk (you can then edit the hunk manually by replacing +/- by #)
+* `?` print hunk help
+
+If the file is not in the repository yet, you can first do `git add -N &lt;filename&gt;`. Afterwards you can go on with `git add -p &lt;filename&gt;`.
+
+</pre>
 </div>
 <div created="20200730115522490" modified="20200730120006876" tags="tip godot code" title="Stick input strength" url="https://youtu.be/mAbG8Oi-SvQ?t=1699">
 <pre>Use `Input.get_action_strength(action : String) -&gt; float`.
