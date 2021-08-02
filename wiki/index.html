@@ -437,6 +437,8 @@ Error message and password prompt
 
 <li>Apply patches automatically during rebase</li>
 
+<li>Batch-editing scenes</li>
+
 <li>Changing serialized values with a script</li>
 
 <li>Checkout previous branch</li>
@@ -9802,7 +9804,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20210802080005942" list="[[Changing serialized values with a script]] [[Adding menu item]] [[Working with selection]] [[Unity Tips]]" modified="20210802080030819" title="$:/StoryList">
+<div created="20210802080005942" list="[[Batch-editing scenes]] [[Changing serialized values with a script]] [[Adding menu item]] [[Working with selection]] [[Unity Tips]]" modified="20210802080030819" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10786,6 +10788,19 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 </div>
 <div created="20210313110336728" modified="20210313110411136" tags="git tip" title="Apply patches automatically during rebase">
 <pre>`git rebase -s recursive -X &lt;ours/theirs&gt;`</pre>
+</div>
+<div created="20210802082613230" modified="20210802082832033" tags="unity tip editor" title="Batch-editing scenes">
+<pre>To batch-edit scenes use the snippet below:
+
+```
+var root = &quot;Assets/Scenes/Levels&quot;;
+var dirs = Directory.EnumerateFiles(root, &quot;*.unity&quot;);
+foreach (var dir in dirs) {
+    var scene = EditorSceneManager.OpenScene(dir);
+    DoTheThing();
+    EditorSceneManager.SaveScene(scene);
+}
+```</pre>
 </div>
 <div created="20210802081956034" modified="20210802082528762" tags="editor tip unity" title="Changing serialized values with a script">
 <pre>One can't directly change values with editor script, to make the change permanent use `SerializedObject` like so:
