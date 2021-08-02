@@ -437,6 +437,8 @@ Error message and password prompt
 
 <li>Apply patches automatically during rebase</li>
 
+<li>Changing serialized values with a script</li>
+
 <li>Checkout previous branch</li>
 
 <li>Force push with lease</li>
@@ -9800,7 +9802,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20210802080005942" list="[[Adding menu item]] [[Working with selection]] [[Unity Tips]]" modified="20210802080030819" title="$:/StoryList">
+<div created="20210802080005942" list="[[Changing serialized values with a script]] [[Adding menu item]] [[Working with selection]] [[Unity Tips]]" modified="20210802080030819" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10784,6 +10786,18 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 </div>
 <div created="20210313110336728" modified="20210313110411136" tags="git tip" title="Apply patches automatically during rebase">
 <pre>`git rebase -s recursive -X &lt;ours/theirs&gt;`</pre>
+</div>
+<div created="20210802081956034" modified="20210802082528762" tags="editor tip unity" title="Changing serialized values with a script">
+<pre>One can't directly change values with editor script, to make the change permanent use `SerializedObject` like so:
+
+```
+var pc = block.GetComponent&lt;PropagatesColor&gt;();
+var so = new SerializedObject(pc);
+so.FindProperty(&quot;startColor&quot;).colorValue = block.startColor;
+so.ApplyModifiedProperties();
+```
+
+To see a property's name, use //Shift+RMB -&gt; Print Property Path// on it in Inspector.</pre>
 </div>
 <div created="20210313110452104" modified="20210313110546504" tags="tip git" title="Checkout previous branch">
 <pre>`git checkout -` can be used to return to the previous branch the same way `cd -` works.</pre>
