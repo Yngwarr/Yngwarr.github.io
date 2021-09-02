@@ -465,9 +465,9 @@ Error message and password prompt
 
 <li>Pixel art view setup</li>
 
-<li>Remove branch</li>
+<li>Remove an object from a scene in editor</li>
 
-<li>Remove object from scene in editor</li>
+<li>Remove branch</li>
 
 <li>Resize file to fit 2048 constraint</li>
 
@@ -9814,7 +9814,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20210902093038129" list="[[Remove object from scene in editor]] [[Instantiate prefab in editor]]" modified="20210902093045585" title="$:/StoryList">
+<div created="20210902093038129" list="[[Unity Tips]]" modified="20210902102422114" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10637,7 +10637,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191022101950628" modified="20191022102058607" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div created="20191022113611908" modified="20210802101509883" title="$:/temp/search">
+<div created="20191022113611908" modified="20210902102414617" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20200730120532503" modified="20200730120532503" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -10952,15 +10952,15 @@ PrefabUtility.InstantiatePrefab(prefab, scene);
 * Set ''Stretch Mode'' to ''2d''.
 * You may set ''Aspect'' to suit your needs.</pre>
 </div>
+<div created="20210902102212228" modified="20210902102429819" tags="editor tip unity" title="Remove an object from a scene in editor">
+<pre>```
+Object.DestroyImmediate(Object.FindObjectByType&lt;Example&gt;());
+```</pre>
+</div>
 <div created="20210313111022528" modified="20210313111041382" tags="tip git" title="Remove branch">
 <pre>Globally: `git push -d &lt;remote_name&gt; &lt;branch_name&gt;`
 
 Locally: `git branch -d &lt;branch_name&gt;`</pre>
-</div>
-<div created="20210902102212228" modified="20210902102356626" tags="editor tip unity" title="Remove object from scene in editor">
-<pre>```
-Object.DestroyImmediate(Object.FindObjectByType&lt;Example&gt;());
-```</pre>
 </div>
 <div created="20210323112843350" modified="20210323112955589" tags="tip shell" title="Resize file to fit 2048 constraint">
 <pre>`convert $f -resize 2048x2048 new_$f`</pre>
