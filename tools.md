@@ -6,6 +6,11 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 
 * When struggle, try to read some really old games' descriptions. E. g. [Tau Ceti](https://en.wikipedia.org/wiki/Tau_Ceti_(video_game)).
 
+## Planning
+
+* [Codecks](https://www.codecks.io/) -- cool for game developers.
+* [Mindmaps](https://www.mindmaps.app/) -- a free mindmap creation tool.
+
 ## Graphics
 
 * Pixel art [editor](https://lospec.com/pixel-editor), [palette list](https://lospec.com/palette-list) and a [whole lotta tutorials](https://lospec.com/pixel-art-tutorials)!
@@ -60,10 +65,6 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [8 Bit Workshop](http://8bitworkshop.com/).
 * [raylib](raylib.com) - pure and simple C library for way too many platforms.
 * [DragonRuby](https://dragonruby.itch.io/dragonruby-gtk) - pure and simple Ruby library.
-
-## Project management
-
-* [Codecks](https://www.codecks.io/) -- cool for game developers.
 
 ## Marketing
 
