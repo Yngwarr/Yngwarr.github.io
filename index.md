@@ -14,13 +14,8 @@ Some of our favorite ones:
 * [Remote Bot][rb] — the crazy mix of my favorite things: command line interface
   and platformers. This turned out to be more about tactics than reflexes or typing
   skills.
-
-<!--![](https://img.itch.zone/aW1nLzI4NTE1MzAucG5n/180x143%23c/IY%2Fd29.png "Made with Godot")-->
-
 * [Snaketris][st] — curious, what it's like to play two different classic arcade
   games with a friend on the same field?  Well, you can try now! :)
-
-<!--![](https://img.itch.zone/aW1hZ2UvMjAxMzEwLzEwODY0ODEucG5n/180x143%23c/FxMWE4.png "Made with Phaser.js")-->
 
 [rb]: https://yngvarr.itch.io/remote-bot "Robots go wheeeeee!"
 [st]: https://yngvarr.itch.io/snaketris "Snakes and bricks?? On the same grid?!?!"
@@ -28,12 +23,18 @@ Some of our favorite ones:
 My other hobby is creating one-page static sites on various occasions, including:
 
 * [Ludum Dare backlog][ldb] generated from lists of authors ([source][ldb-git]).
-* [Daily Game Idea Challenge][dgi] — an on-going personal challenge to prepare for the next Ludum Dares ([source][dgi-git]).
+* [Daily Game Idea Challenge][dgi] — an inactive personal challenge to prepare for the next Ludum Dares ([source][dgi-git]).
 
 [ldb]: https://hardweird.ru/ld-backlog/
 [ldb-git]: https://github.com/Yngwarr/ld-backlog
 [dgi]: https://hardweird.ru/daily-game-idea/
 [dgi-git]: https://github.com/Yngwarr/daily-game-idea
+
+I also keep a growing [list of useful gamedev tools][tools] and accumulate useful
+programming and gamedev advice on my [wiki][wiki].
+
+[tools]: /tools
+[wiki]: /wiki
 
 <!--<iframe frameborder="0" src="https://itch.io/embed/201310?bg_color=8a8a8a&amp;fg_color=0d0d0d&amp;link_color=00045c&amp;border_color=333333" width="208" height="167"><a href="https://yngwarr.itch.io/snaketris">Snaketris by Yngwarr</a></iframe>-->
 
