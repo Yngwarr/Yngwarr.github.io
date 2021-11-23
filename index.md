@@ -12,7 +12,7 @@ __Hardweird Inc.__ is an imaginary _(for now)_ game development studio run by
 Some of our favorite ones:
 
 * [Remote Bot][rb] — the crazy mix of my favorite things: command line interface
-  and platformers. This turned out to be more about tactics then reflexes or typing
+  and platformers. This turned out to be more about tactics than reflexes or typing
   skills.
 
 <!--![](https://img.itch.zone/aW1nLzI4NTE1MzAucG5n/180x143%23c/IY%2Fd29.png "Made with Godot")-->
