@@ -443,6 +443,8 @@ Error message and password prompt
 
 <li>Checkout previous branch</li>
 
+<li>Convert several images to one atlas</li>
+
 <li>Creating a scene from scratch</li>
 
 <li>Crop image</li>
@@ -9816,7 +9818,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20220101074532586" list="[[Crop image]] Hello! [[Shell Tips]] [[Resize file to fit 2048 constraint]]" modified="20220101074603601" title="$:/StoryList">
+<div created="20220101074532586" list="[[Convert several images to one atlas]] [[Crop image]] Hello! [[Shell Tips]] [[Resize file to fit 2048 constraint]]" modified="20220101074603601" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10829,6 +10831,13 @@ To see a property's name, use //Shift+RMB -&gt; Print Property Path// on it in I
 <div created="20210313110452104" modified="20210313110546504" tags="tip git" title="Checkout previous branch">
 <pre>`git checkout -` can be used to return to the previous branch the same way `cd -` works.</pre>
 </div>
+<div created="20220101074921658" modified="20220101075120521" tags="shell tip" title="Convert several images to one atlas">
+<pre>`$w`, `$h` — geometry of the source images
+
+```
+montage *.png -geometry $wx$h $dest_file
+```</pre>
+</div>
 <div created="20210802093034150" modified="20210819091508621" tags="editor unity tip" title="Creating a scene from scratch" type="">
 <pre>Create a new scene:
 
@@ -10842,9 +10851,9 @@ Save the created scene:
 EditorSceneManager.SaveScene(scene, &quot;Assets/Scenes/Scene.unity&quot;);
 ```</pre>
 </div>
-<div created="20220101074606674" modified="20220101074849697" tags="shell tip" title="Crop image">
+<div created="20220101074606674" modified="20220101075144240" tags="shell tip" title="Crop image">
 <pre>```
-convert $filename -crop $wx$h+$x+$y +repage $new_file
+convert $src_file -crop $wx$h+$x+$y +repage $dest_file
 ```
 </pre>
 </div>
