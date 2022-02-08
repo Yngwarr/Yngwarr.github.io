@@ -469,6 +469,8 @@ Error message and password prompt
 
 <li>Pixel art view setup</li>
 
+<li>Pull with a custom SSH key</li>
+
 <li>Remove an object from a scene in editor</li>
 
 <li>Remove branch</li>
@@ -9818,7 +9820,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20220101074532586" list="[[Convert several images to one atlas]] [[Crop image]] Hello! [[Shell Tips]] [[Resize file to fit 2048 constraint]]" modified="20220101075238401" title="$:/StoryList">
+<div created="20220208084007678" list="[[Pull with a custom SSH key]] [[Git Tips]]" modified="20220208084012174" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10923,7 +10925,7 @@ public class FloatReference {
 <div created="20210313111101087" modified="20210728103040121" tags="links git" title="Git Links">
 <pre>* [[Squashing commits|http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html]]</pre>
 </div>
-<div created="20210313110310544" modified="20210802083427727" tags="list git" title="Git Tips">
+<div created="20210313110310544" modified="20220208084020055" tags="list git" title="Git Tips">
 <pre>&lt;&lt;list-links &quot;[tag[git]tag[tip]]&quot;&gt;&gt;
 
 External links:
@@ -10970,6 +10972,19 @@ PrefabUtility.InstantiatePrefab(prefab, scene);
 * Use ''Test width'' and ''Test height'' to setup a window's size (usually n times bigger then view size).
 * Set ''Stretch Mode'' to ''2d''.
 * You may set ''Aspect'' to suit your needs.</pre>
+</div>
+<div created="20220208084025640" modified="20220208084324936" tags="tip git" title="Pull with a custom SSH key">
+<pre>To clone a repo with a custom key use:
+
+```
+git clone -c core.sshCommand=&quot;/usr/bin/ssh -i ~/.ssh/id_rsa_whatever&quot; repo_path.git
+```
+
+Then you can add a custom local config to do in automatically:
+
+```
+git config --local core.sshCommand &quot;/usr/bin/ssh -i ~/.ssh/id_rsa_whatever&quot;
+```</pre>
 </div>
 <div created="20210902102212228" modified="20210902102429819" tags="editor tip unity" title="Remove an object from a scene in editor">
 <pre>```
