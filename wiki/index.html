@@ -449,6 +449,8 @@ Error message and password prompt
 
 <li>Crop image</li>
 
+<li>Drawing a bitmap</li>
+
 <li>Force push with lease</li>
 
 <li>Game Architecture with Scriptable Objects</li>
@@ -458,6 +460,8 @@ Error message and password prompt
 <li>Git Tips</li>
 
 <li>Godot Tips</li>
+
+<li>Haxe Tips</li>
 
 <li>Hello!</li>
 
@@ -9820,7 +9824,7 @@ Error message and password prompt
 <div created="20191022105206847" modified="20200730114808032" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
-<div created="20220208090908693" list="$:/ControlPanel Hello!" modified="20220208090908693" title="$:/StoryList">
+<div created="20220219102631393" list="[[Drawing a bitmap]] [[Haxe Tips]] Hello! [[Git Tips]]" modified="20220219102631393" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200730102307565" modified="20200730102337561" title="$:/temp/advancedsearch">
@@ -10643,8 +10647,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20191022101950628" modified="20191022102058607" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
-<div created="20191022113611908" modified="20220101075237194" title="$:/temp/search">
-<pre>shell </pre>
+<div created="20191022113611908" modified="20220219102620517" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200730120532503" modified="20200730120532503" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
 <pre>loaded</pre>
@@ -10861,6 +10865,13 @@ convert $src_file -crop $wx$h+$x+$y +repage $dest_file
 ```
 </pre>
 </div>
+<div created="20220219102819151" modified="20220219102948616" tags="heaps tip" title="Drawing a bitmap">
+<pre>```
+hxd.Res.initLocal();
+var img = hxd.Res.load(&quot;img.png&quot;).toImage().toTile();
+var bitmap = new h2d.Bitmap(img, s2d);
+```</pre>
+</div>
 <div created="20210313110603657" modified="20210313110656031" tags="tip git" title="Force push with lease">
 <pre>Instead of `git push --force` use `git push --force-with-lease`. It will prevent you from overriding other people's work.</pre>
 </div>
@@ -10925,7 +10936,7 @@ public class FloatReference {
 <div created="20210313111101087" modified="20210728103040121" tags="links git" title="Git Links">
 <pre>* [[Squashing commits|http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html]]</pre>
 </div>
-<div created="20210313110310544" modified="20220208084020055" tags="list git" title="Git Tips">
+<div created="20210313110310544" modified="20220219102717496" tags="list git" title="Git Tips">
 <pre>&lt;&lt;list-links &quot;[tag[git]tag[tip]]&quot;&gt;&gt;
 
 External links:
@@ -10944,7 +10955,17 @@ Setting up a game:
 Programming a game:
 &lt;&lt;list-links &quot;[tag[godot]tag[code]]&quot;&gt;&gt;</pre>
 </div>
-<div created="20191022104839077" modified="20210313112359988" tags="post" title="Hello!" type="text/vnd.tiddlywiki">
+<div created="20220219102645728" modified="20220219102815441" tags="list" title="Haxe Tips">
+<pre>Heaps related:
+
+&lt;&lt;list-links &quot;[tag[heaps]tag[tip]]&quot;&gt;&gt;
+
+General Haxe tips:
+
+&lt;&lt;list-links &quot;[tag[haxe]tag[tip]]&quot;&gt;&gt;
+</pre>
+</div>
+<div created="20191022104839077" modified="20220219102629576" tags="post" title="Hello!" type="text/vnd.tiddlywiki">
 <pre>I find TiddlyWiki a great way to organize short notes. I have a bunch of lists that may be helpful for a game developer.
 
 &lt;&lt;list-links &quot;[tag[list]]&quot;&gt;&gt;</pre>
