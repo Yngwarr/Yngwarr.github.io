@@ -65,6 +65,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [8 Bit Workshop](http://8bitworkshop.com/).
 * [raylib](raylib.com) - pure and simple C library for way too many platforms.
 * [DragonRuby](https://dragonruby.itch.io/dragonruby-gtk) - pure and simple Ruby library.
+* [W](https://xem.github.io/W/) - micro framework for WebGL2.
 
 ## Marketing
 
