@@ -67,6 +67,10 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [DragonRuby](https://dragonruby.itch.io/dragonruby-gtk) - pure and simple Ruby library.
 * [W](https://xem.github.io/W/) - micro framework for WebGL2.
 
+## Misc
+
+* [JSON visualizer](http://jsonviewer.stack.hu/).
+
 ## Marketing
 
 * [Guide #1](https://medium.com/kitfox-games/the-0-marketing-game-guide-e649a5ac83f4).
