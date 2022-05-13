@@ -4,6 +4,7 @@ A list of my favorite Internet-radio stations and music-related sites.
 
 * [C64-style music](https://kohina.duckdns.org/streamplayer.html).
 * [Nolife radio](https://nolife-radio.com/) — music from videogames.
+* [Roland Radio](https://rolandradio.net/) — another chiptune radio.
 * [Retrowave radio](https://retrowave.ru/).
 * [Nightwave plaza](https://plaza.one/) — vaporwave radio.
 * [Music for programming](https://musicforprogramming.net/).
