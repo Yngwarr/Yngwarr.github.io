@@ -70,6 +70,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 ## Misc
 
 * [JSON visualizer](http://jsonviewer.stack.hu/).
+* Extreme [JavaScript minifier](https://siorki.github.io/regPack.html).
 
 ## Marketing
 
