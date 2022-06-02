@@ -39,7 +39,8 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * Not so online tool: [DefleMask](http://deflemask.com/).
 * A JS audio library: [Howler](https://howlerjs.com/).
 * [SunVox](https://www.warmplace.ru/soft/sunvox/).
-* [ZzFX](https://zzfx.3d2k.com/) for sfx.
+* [ZzFX](https://killedbyapixel.github.io/ZzFX/) for sfx.
+* [ZzFXM](https://keithclark.github.io/ZzFXM/) - tiny music tracker.
 * One-line music with [Bytebeat](https://greggman.com/downloads/examples/html5bytebeat/html5bytebeat.html).
 * [MusicLab Song Maker](https://musiclab.chromeexperiments.com/Song-Maker/).
 * [FamiStudio](https://famistudio.org/) is an attempt to make FamiTracker more accessable.
