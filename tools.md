@@ -10,6 +10,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 
 * [Codecks](https://www.codecks.io/) -- cool for game developers.
 * [Mindmaps](https://www.mindmaps.app/) -- a free mindmap creation tool.
+* [Excalidraw](https://excalidraw.com/) -- a small tool for drawing diagrams and schemes.
 
 ## Graphics
 
