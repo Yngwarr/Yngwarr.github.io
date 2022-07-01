@@ -37,6 +37,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * Music programming language: [Alda](https://github.com/alda-lang/alda).
 * Simple music editor: [beepbox](https://www.beepbox.co/).
 * Its more customizable fork: [modbox](https://moddedbeepbox.github.io/3.0/).
+* Another beepbox: [jummbox](https://jummbus.bitbucket.io/).
 * More complex online tool: [AudioTool](https://www.audiotool.com/app) (login required).
 * Not so online tool: [DefleMask](http://deflemask.com/).
 * A JS audio library: [Howler](https://howlerjs.com/).
