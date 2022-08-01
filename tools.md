@@ -48,6 +48,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [MusicLab Song Maker](https://musiclab.chromeexperiments.com/Song-Maker/).
 * [FamiStudio](https://famistudio.org/) is an attempt to make FamiTracker more accessable.
 * Online music tracker: [BassoonTracker](https://www.stef.be/bassoontracker/).
+* Sfx generator: [sfxia](https://rxi.itch.io/sfxia).
 
 ## Game Design
 
