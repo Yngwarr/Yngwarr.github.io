@@ -25,9 +25,9 @@ My other hobby is creating one-page static sites on various occasions, including
 * [Ludum Dare backlog][ldb] generated from lists of authors ([source][ldb-git]).
 * [Daily Game Idea Challenge][dgi] — an inactive personal challenge to prepare for the next Ludum Dares ([source][dgi-git]).
 
-[ldb]: https://hardweird.ru/ld-backlog/
+[ldb]: https://hardweird.net/ld-backlog/
 [ldb-git]: https://github.com/Yngwarr/ld-backlog
-[dgi]: https://hardweird.ru/daily-game-idea/
+[dgi]: https://hardweird.net/daily-game-idea/
 [dgi-git]: https://github.com/Yngwarr/daily-game-idea
 
 I also keep a growing [list of useful gamedev tools][tools] and accumulate useful
