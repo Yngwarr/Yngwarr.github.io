@@ -28,6 +28,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 ## Free Assets
 
 * [Vector icons](https://game-icons.net/).
+* [Lucide icons](https://lucide.dev/).
 * [Public Domain textures](https://ambientcg.com/).
 * [Low-poly 3D models](https://poly.pizza/).
 
