@@ -53,8 +53,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 
 ## Game Design
 
-* (RU) [Crash](https://vc.ru/pixonic/40689-kak-nayti-ideyu-dlya-igry) [course](https://vc.ru/pixonic/41523-kak-prevratit-ideyu-dlya-igry-v-koncept) [on](https://vc.ru/pixonic/42293-proverka-koncepta-igry-minimalnymi-sredstvami) [game design](https://vc.ru/pixonic/43648-meta-game) from a marketing perspective.
-* Creator of Haxe has [something to tell](https://deepnight.net/tutorials/) about tile-based games.
+*  Deepnight's [great tutorials](https://deepnight.net/tutorials/) about tile-based games.
 
 ## Physics
 
@@ -73,6 +72,10 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [raylib](raylib.com) - pure and simple C library for way too many platforms.
 * [DragonRuby](https://dragonruby.itch.io/dragonruby-gtk) - pure and simple Ruby library.
 * [W](https://xem.github.io/W/) - micro framework for WebGL2.
+
+## Animation
+
+* [Wick Editor](https://www.wickeditor.com/editor/).
 
 ## Misc
 
