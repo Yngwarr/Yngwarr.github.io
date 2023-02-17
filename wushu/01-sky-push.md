@@ -41,4 +41,4 @@
 
 ***
 
-**Next up:** [Птенец покидает гнездо](02-nestling-leaves).
+**Next up:** [Птенец покидает гнездо](./02-nestling-leaves).
