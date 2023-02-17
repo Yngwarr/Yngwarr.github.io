@@ -10,4 +10,4 @@
 
 ***
 
-**Next up:** [Змея кусает себя за хвост](./06-snake-bites-its-tail).
+**Next up:** [Змея кусает себя за хвост](../06-snake-bites-its-tail).
