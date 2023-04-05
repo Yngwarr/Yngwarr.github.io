@@ -1,4 +1,4 @@
-Welcome to my homepage, traveller! I'm [Yngvarr][y] the programmer. My intrests
+Welcome to my homepage, traveller! I'm <a rel="me" href="https://mastodon.gamedev.place/@yngvarr" title="The programmer's Mastodon">Yngvarr</a> the programmer. My intrests
 lie in realms of gamedev, linux and compilers.
 
 __Hardweird Inc.__ is an imaginary _(for now)_ game development studio run by
@@ -6,7 +6,6 @@ __Hardweird Inc.__ is an imaginary _(for now)_ game development studio run by
 [Ludum Dare][ld].
 
 [s]: https://twitter.com/syudzius "The artist's Twitter"
-[y]: https://twitter.com/_yngvarr "The programmer's Twitter"
 [ld]: https://ldjam.com/users/yngvarr/ "All our LD games"
 
 Some of our favorite ones:
