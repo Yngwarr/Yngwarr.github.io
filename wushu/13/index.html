@@ -51,6 +51,16 @@
     <b>Next up:</b>
     
     <a href="/wushu/14/">Поверженный дракон</a>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.code !== 'Space') return;
+            if (!event.ctrlKey) return;
+            if (event.repeat) return;
+
+            window.location = "\/wushu\/14\/";
+        });
+    </script>
     
 
     

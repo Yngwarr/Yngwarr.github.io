@@ -60,6 +60,16 @@
     <b>Next up:</b>
     
     <a href="/wushu/34/">Потягивание дракона</a>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.code !== 'Space') return;
+            if (!event.ctrlKey) return;
+            if (event.repeat) return;
+
+            window.location = "\/wushu\/34\/";
+        });
+    </script>
     
 
     

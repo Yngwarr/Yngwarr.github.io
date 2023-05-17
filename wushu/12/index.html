@@ -49,6 +49,16 @@
     <b>Next up:</b>
     
     <a href="/wushu/13/">Сжатое кольцо</a>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.code !== 'Space') return;
+            if (!event.ctrlKey) return;
+            if (event.repeat) return;
+
+            window.location = "\/wushu\/13\/";
+        });
+    </script>
     
 
     

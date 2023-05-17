@@ -47,6 +47,16 @@
     <b>Next up:</b>
     
     <a href="/wushu/35/">Свернулись в клубок</a>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.code !== 'Space') return;
+            if (!event.ctrlKey) return;
+            if (event.repeat) return;
+
+            window.location = "\/wushu\/35\/";
+        });
+    </script>
     
 
     
