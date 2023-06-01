@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="My 14th Ludum Dare in a row have finally finished and it was a wild experience! It was the first time I made a 3D game with Godot and also the very first time I used Godot 4, which turned out to be a bit unstable, but pretty usable.
+As always, I teamed up with my wonderful artist, Syudzius, to take part in our 10th Ludum Dare together. The theme was Delivery and we made the game called Early Morning Tofu Delivery.">  
+
+  <title>
+    
+      Ludum Dare 53 post-mortem (Early Morning Tofu Delivery)
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.eee3c63f1c0d1e10c6f424d301a018eda8d39279907a94b20807e4840e58eedc3567299079c85868b187a3d53d41d01cd306dc11581a2daeaa367a4f4a30a17c.css" integrity="sha512-7uPGPxwNHhDG9CTTAaAY7ajTknmQepSyCAfkhA5Y7tw1ZymQechYaLGHo9U9QdAc0wbcEVgaLa6qNnpPSjChfA==" />
+  <link rel="alternate" type="application/rss+xml" title="hardweird inc. posts" href="https://hardweird.net/index.xml">
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">&lt;- back</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2023-06-01 00:00:00 &#43;0000 UTC">
+            2023-06-01
+        </time>
+    </p>
+
+    <h1>Ludum Dare 53 post-mortem (Early Morning Tofu Delivery)</h1>
+
+    
+
+    <p>My 14th Ludum Dare in a row have finally finished and it was a wild experience!
+It was the first time I made a 3D game with Godot and also the very first time I
+used Godot 4, which turned out to be a bit unstable, but pretty usable.</p>
+<p>As always, I teamed up with my wonderful artist, <a href="https://twitter.com/syudzius" title="artist's twitter">Syudzius</a>, to take part
+in our 10th Ludum Dare together. The theme was <em>Delivery</em> and we made the game
+called <em>Early Morning Tofu Delivery</em>.</p>
+
+
+<iframe src="https://itch.io/embed/2048324?linkback=true" width="552"
+height="167" frameborder="0"><a
+href="https://yngvarr.itch.io/early-morning-tofu-delivery">Early Morning Tofu
+Delivery by yngvarr</a></iframe>
+
+
+
+<h2 id="what-did-we-do">What did we do?</h2>
+<p>Funny story about the theme is that we&rsquo;ve decided on the idea <em>before</em> the theme
+anouncement. We didn&rsquo;t brainstorm beforehand, mind you, I just said <em>&ldquo;you know,
+if &lsquo;Delivery&rsquo; wins, we&rsquo;re making a game about delivering tofu from the top of
+the mountain&rdquo;</em> as a joke about one of our favorite <a href="https://myanimelist.net/anime/185/Initial_D_First_Stage" title="Initial D">anime series</a>. I
+was expecting <em>&ldquo;The health bar is more than just a health bar&rdquo;</em> to be the final
+theme, as the most eye-catching one of the final round. Luckily, it didn&rsquo;t
+happen!</p>
+<p>Shortly after the announcement we decided to commit to our joke idea. I&rsquo;ve
+always wanted to create a racing game, but my previous attempt with Unity didn&rsquo;t
+work out, so I was eager to check what Godot 4 has to offer in this regard. On
+the contrary, my artist wasn&rsquo;t so happy about making the 3D game, as she had no
+prior experience with Blender. After a short discussion, we found the common
+ground in using third-party assets for everything 3D.</p>
+<p>Programming turned out to be the easiest part of the jam. I spent the most of
+the time tweaking physics, generating collision shapes and building the track.
+The latter was the most exhausting: I used <a href="https://kenney.nl/assets/city-kit-roads" title="City Kit (Roads)">Kenney&rsquo;s tile pack</a> to
+create the road and didn&rsquo;t bother with procedural generation. So, every tile is
+placed by my not very precise hand, leaving little imperfections in every tile&rsquo;s
+position. It&rsquo;s not a problem when you have a straight road with no
+intersections, but I wanted a branching path for more variety and replayability.
+Unsurprisngly, I ended up unable to merge branches back, so I had to introduce a
+very sloppy diagonal on one of the junctions. If you&rsquo;re making a racing game,
+don&rsquo;t be like me, make something more clever.</p>
+<figure><img src="sloppy.png"
+         alt="Sloppily connected tiles of the road in Godot editor."/><figcaption>
+            <p>Almost unnoticable, but still sloppy.</p>
+        </figcaption>
+</figure>
+
+<p>Figuring out the vehicle physics was tricky, but didn&rsquo;t feel like a burden. It
+was more of a research, finding out how values affect the vehicle and trying to
+achieve the particular feeling. I knew that making the car drift and not spin
+out would take much more effort than I&rsquo;d be willing to put in, instead I wanted
+the car to feel heavy and to require precise throttle control. I took reference
+from a <a href="https://www.suzuki.co.th/en/model/carry/specification" title="Suzuki Carry">real car</a>, made most of the values match its specification,
+and carefully modified some of them to match the desired feel. Somehow, I
+managed to create a satisfying handling setup.</p>
+<figure><img src="real-car.png"
+         alt="Real car asks a low-poly car what it is. Low-poly one answers &#39;I am you!&#39;"/><figcaption>
+            <p>Less polygons, more fun!</p>
+        </figcaption>
+</figure>
+
+<p>As a side-note, I want to mention that Godot&rsquo;s default values for
+vehicle-related nodes are inadequate to say the least. Luckily, the
+documentation provides examples and explainations for the most of them, so if
+you plan to make a car game in Godot, don&rsquo;t get discouraged when the car doesn&rsquo;t
+behave from the get-go. Read the docs, make some tweaks and it will eventually
+click.</p>
+<figure><img src="godot-default.png"
+         alt="The default value of suspension_travel in Godot docs is 5.0. The very same docs recommends to set it between 0.1 and 0.3."/><figcaption>
+            <p>I mean, come on! It&rsquo;s 4 lines below!</p>
+        </figcaption>
+</figure>
+
+<p>While I was busy building roads and tweaking physics, my artist was had her own
+research going: she was creating visual effects, such as tire smoke and
+checkpoints. She had no prior knowledge of Godot Engine and had to learn it on
+the fly. And she succeeded! From a vague description of what I want checkpoints
+to look like, she was able to create a beauty I did not expect.</p>
+<figure><img src="checkpoint.png"
+         alt="Square-shaped checkpoint."/><figcaption>
+            <p>It looks even better when animated!</p>
+        </figcaption>
+</figure>
+
+<p>We wanted the game to take place in the early morning, before the sunrise. It
+was a good excuse to test the new Godot renderer and also gain some experience
+working with lights. I had much fun setting up the headlights and making
+checkpoints shine, and the resulting style of the game made it stand out.</p>
+<p>The last day was spent making sounds, finding music and trying to fit as much
+mountains in our game to match the reference. Coincidentally, we spent a part of
+that day in a trip to local mountains with our friends, so by the time we got
+back to work, we knew how the mountain road should look like. We also knew that
+our game won&rsquo;t look anything close. <code>X_X</code></p>
+<h2 id="how-did-it-end-up">How did it end up?</h2>
+<h3 id="the-good">The good</h3>
+<ul>
+<li>
+<p><strong>The theme</strong>. It was the second time we didn&rsquo;t really bother searching for
+the perfect idea and picked the first workable one instead. It doesn&rsquo;t mean
+we gave up on trying to approach the theme creatively, but sometimes we just
+want to make a particular game, no matter how boring its theme
+interpretation is.</p>
+</li>
+<li>
+<p><strong>Free assets</strong>. It took me several game jams to embrace the inevitable and
+start using free assets with no shame. I still have a dream of making the
+whole game myself, but right now it&rsquo;s more important to focus on making
+better games. Once we can do it consistently, I&rsquo;ll be able to concentrate
+on assets quality.</p>
+</li>
+<li>
+<p><strong>Polish.</strong> Our entries seem to be more and more polished with every jam
+we&rsquo;re participating in. It&rsquo;s not obvious if you compare with the latest
+entries, but I can feel the attention shift from simply implementing the
+game to making it pleasant to play. It happens naturally, but I think
+settling on Godot as an engine of choice was the important decision that
+allows us to grow faster in this regard.</p>
+</li>
+<li>
+<p><strong>Engine choice.</strong> While Godot 4 is still considered unstable, I&rsquo;m glad I took
+the risk. In the end, I got accustomed to it during the jam and shouldn&rsquo;t
+have problems digging deeper in the future.</p>
+</li>
+</ul>
+<h3 id="the-bad">The bad</h3>
+<ul>
+<li>
+<p><strong>Timing.</strong> Sadly, we had to crunch this time. I don&rsquo;t know if we&rsquo;d have to,
+if not for the trip, but skipping it was out of the question.</p>
+</li>
+<li>
+<p><strong>Scope.</strong> You know you overscope if you plan to add the achievements to your
+jam game. I swear, I had the implementation in mind for the most of the jam,
+it should&rsquo;ve been easier than making mountains in Blender! But, as it
+happens so often, small details and lurking bugs don&rsquo;t take much time
+individually, but are so large in numbers, that by the time you&rsquo;re done with
+them, you have no time for extra features.</p>
+</li>
+<li>
+<p><strong>Sounds.</strong> The engine&rsquo;s sound was tricky to figure out. I wanted to synthesize
+this sound so badly, mainly because I saw that <a href="https://youtu.be/RKT-sKtR970" title="Engine Sound Simulator">AngeTheGreat&rsquo;s video</a>
+where he explains, why the most of the engine sounds suck. Well, I made it
+suck even more by using an idle engine sample and adjusting its pitch based
+on the car&rsquo;s speed. It&rsquo;s so wrong on multiple levels, but in a jam setting,
+I should care less about it.</p>
+</li>
+<li>
+<p><strong>Music.</strong> It had to be eurobeat, but I didn&rsquo;t manage to find a single
+royalty-free track. I had to find something else, and to be honest, the end
+result turned out pretty sick! Now it sounds more like the old <em>Need for
+Speed</em> game and has some charm besides the only pop-culture reference. But
+the need to rely on someone&rsquo;s else music is starting to bug me.</p>
+</li>
+<li>
+<p><strong>3D.</strong> Yeah, that&rsquo;s too much dimensions for us. While I was having a blast
+making my first 3D game in Godot, my partner was struggling way out of her
+domain. So, despite the game ending up being good and both of us are happy
+about it, we decided to concentrate on stylish 2D games in the future.</p>
+</li>
+</ul>
+<h2 id="outro">Outro</h2>
+<p>So, how good is the game for a 14th entry? An anxious part of me doubts that
+we&rsquo;re making enough progress, expecially since we ended up ranking lower than
+our first entries.</p>
+<p>But then I remember that the point of game jams is to have fun and our real goal
+is to get better than we were before. In this regard, we&rsquo;re making a huge
+progress: we&rsquo;re better at communicating, our games have already acquired their
+unique style, we finally settled on using Godot for all our jams (despite the
+recent digressions) and the quality of our games is increasing with every jam.
+And that&rsquo;s what really matters.</p>
+<hr>
+<p>Thank you for reading! If you want to see the process of making this game, check
+out this timelapse. It only shows my perspective, but you may still find it
+entertaining.</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S0HHU6Cbmog"
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen></iframe>
+
+
+
+
+</article>
+
+            </div>
+        </main>
+    </body></html>
