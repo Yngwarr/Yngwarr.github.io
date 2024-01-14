@@ -1,0 +1,36 @@
+{{ define "main" }}
+{{ partial "back_link.html" .}}
+
+<article>
+    <h1>{{ .Title }}</h1>
+
+    {{ if .Params.toc }}
+        <aside {{ if .Params.tocBorder }} class="toc" {{ end }}>
+            {{ .TableOfContents }}
+        </aside>
+    {{ end }}
+
+    {{ .Content }}
+
+    {{ if .Params.next_ex }}
+
+    <hr />
+
+    <b>Next up:</b>
+    {{ with .Site.GetPage .Params.next_ex }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.code !== 'Space') return;
+            if (!event.ctrlKey) return;
+            if (event.repeat) return;
+
+            window.location = "{{ .Permalink }}";
+        });
+    </script>
+    {{ end }}
+
+    {{ end }}
+</article>
+{{ end }}

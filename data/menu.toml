@@ -1,0 +1,31 @@
+[[entries]]
+title = "socials"
+
+[[entries.entries]]
+title = "<a rel='me' href='https://mastodon.gamedev.place/@yngvarr'>mastodon</a> | <a href='https://yngvarr.itch.io/'>itch</a> | <a href='https://github.com/Yngwarr/'>github</a>"
+
+[[entries.entries]]
+title = "<a href='https://www.youtube.com/@RecreationalProgramming'>youtube</a> where I post jam gameplay and timelapses"
+
+[[entries]]
+title = "pages"
+
+[[entries.entries]]
+title = "<a href='tools'>tools</a> for gamedev I find interesting"
+
+[[entries.entries]]
+title = "Ludum Dare <a href='ld-backlog'>to-play backlog</a>"
+
+[[entries]]
+title = "posts"
+
+[entries.post_list]
+limit = 32
+section = "post"
+show_more = true
+show_more_text = "see more..."
+#show_more_url = "post"
+
+[[entries]]
+title = "rss"
+url = "index.xml"

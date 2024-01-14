@@ -1,0 +1,13 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "nostyleplease"
+title = "hardweird inc."
+
+[params]
+description = "Hi, I'm Igor! This is my personal web-site about programming, gamedev and chill."
+
+[params.theme_config]
+show_description = true
+appearance = "light"
+back_home_text = "<- back"
+date_format = "2006-01-02"

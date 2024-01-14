@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on hardweird inc.</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on hardweird inc.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ludum Dare 53 post-mortem (Early Morning Tofu Delivery)</title>
+      <link>/post/tofu-postmortem/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>/post/tofu-postmortem/</guid>
+      <description>My 14th Ludum Dare in a row have finally finished and it was a wild experience! It was the first time I made a 3D game with Godot and also the very first time I used Godot 4, which turned out to be a bit unstable, but pretty usable.&#xA;As always, I teamed up with my wonderful artist, Syudzius, to take part in our 10th Ludum Dare together. The theme was Delivery and we made the game called Early Morning Tofu Delivery.</description>
+    </item>
+  </channel>
+</rss>
