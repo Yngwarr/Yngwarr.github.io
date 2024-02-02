@@ -89,8 +89,4 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * JavaScript GUI library for tinkering with parameters: [dat.gui](https://github.com/dataarts/dat.gui/).
 * Very in-depth [book](https://www.interdb.jp/pg/) about PostgreSQL.
 * [D3 Graph Gallery](https://d3-graph-gallery.com/index.html).
-
-## Marketing
-
-* [Guide #1](https://medium.com/kitfox-games/the-0-marketing-game-guide-e649a5ac83f4).
-* [Make people understand](https://medium.com/kitfox-games/making-people-understand-and-care-about-your-game-2271f45f52e6).
+* [xterm colors](https://robotmoon.com/256-colors/).
