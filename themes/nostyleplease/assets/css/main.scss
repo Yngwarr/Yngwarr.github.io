@@ -19,7 +19,7 @@ body[a="dark"] { @include dark-appearance; }
 @font-face {
   font-family: Yantramanav;
   src: url(/fonts/Yantramanav-Regular.ttf);
-} 
+}
 
 // bg color is also needed in html in order to
 // block body's background propagation
@@ -87,11 +87,16 @@ table, th, td {
 }
 
 code {
-  color: white;
-  background: black; 
-  font-size: 80%;
-  padding: 0.1em 0.2em;
   font-size: 90%;
+}
+
+:not(pre) > code {
+  // color: white;
+  background: #eee;
+  padding: 0.05em 0.2em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 75%;
 }
 
 code.has-jax {
