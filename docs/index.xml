@@ -30,6 +30,13 @@
       <description>All the gamedev-related links I stumbled upon and found pretty cool.&#xA;Planning Codecks &amp;ndash; cool for game developers. Mindmaps &amp;ndash; a free mindmap creation tool. Excalidraw &amp;ndash; a small tool for drawing diagrams and schemes. Graphics Pixel art editor, palette list and a whole lotta tutorials! A couple of tutorials on colors and pixels (NSFW content nearby). Moar tutorials on pixeling. GIF pixel tutorials. Voxel graphics description language. MagicaVoxel. Imagemagick scripts.</description>
     </item>
     <item>
+      <title>Creating custom systemd services</title>
+      <link>/post/systemd-services/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>/post/systemd-services/</guid>
+      <description>From time to time I stumble upon some server application I want running on my virtual server, be it an anki sync service or a custom-written discord bot. Most of the time I start by running it in a tmux session for several days to see how well it performs and then I write a systemd service, so it works just like a regular daemon app. Here&amp;rsquo;s how I achieve this.</description>
+    </item>
+    <item>
       <title>Взмах хвостом змеи вбок</title>
       <link>/wushu/10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

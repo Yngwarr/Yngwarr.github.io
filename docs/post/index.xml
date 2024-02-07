@@ -15,5 +15,12 @@
       <guid>/post/tofu-postmortem/</guid>
       <description>My 14th Ludum Dare in a row have finally finished and it was a wild experience! It was the first time I made a 3D game with Godot and also the very first time I used Godot 4, which turned out to be a bit unstable, but pretty usable.&#xA;As always, I teamed up with my wonderful artist, Syudzius, to take part in our 10th Ludum Dare together. The theme was Delivery and we made the game called Early Morning Tofu Delivery.</description>
     </item>
+    <item>
+      <title>Creating custom systemd services</title>
+      <link>/post/systemd-services/</link>
+      <pubDate>Sat, 04 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>/post/systemd-services/</guid>
+      <description>From time to time I stumble upon some server application I want running on my virtual server, be it an anki sync service or a custom-written discord bot. Most of the time I start by running it in a tmux session for several days to see how well it performs and then I write a systemd service, so it works just like a regular daemon app. Here&amp;rsquo;s how I achieve this.</description>
+    </item>
   </channel>
 </rss>

@@ -1,6 +1,5 @@
 ---
-draft: true
-title: "Creating user-defined systemd services"
+title: "Creating custom systemd services"
 date: 2023-02-04
 ---
 
@@ -20,6 +19,8 @@ Description=A wonderful service of my own.
 After=nginx.service
 
 [Service]
+User=username
+Group=username
 ExecStart=bash start.sh
 WorkingDirectory=/home/user/service
 
@@ -31,6 +32,6 @@ Put it into `/home/user/service/our-service.service` file an you should be good
 to go. I've added `After=nginx.service` because most of the time I put my
 services behind nginx reverse proxy.
 
-To install the service copy it to `~/.config/systemd/user` and enable it with
-`systemctl --user enable our-service.service`. To start the service use
-`systemctl --user start our-service.service`.
+To install the service copy it to `/etc/systemd/system` and enable it with `sudo
+systemctl enable our-service.service`. To start the service use `sudo systemctl
+start our-service.service`.
