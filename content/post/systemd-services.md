@@ -1,6 +1,6 @@
 ---
 title: "Creating custom systemd services"
-date: 2023-02-04
+date: 2024-02-04
 ---
 
 From time to time I stumble upon some server application I want running on my
