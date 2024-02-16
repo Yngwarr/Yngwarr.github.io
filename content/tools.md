@@ -15,9 +15,6 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 ## Graphics
 
 * Pixel art [editor](https://lospec.com/pixel-editor), [palette list](https://lospec.com/palette-list) and a [whole lotta tutorials](https://lospec.com/pixel-art-tutorials)!
-* [A couple of tutorials](http://www.kyrieru.com/p/tutorials_19.html) on colors and pixels (NSFW content nearby).
-* Moar [tutorials](http://www.slynyrd.com/blog/2019/2/23/pixelblog-14-cityscapes) on pixeling.
-* GIF pixel [tutorials](https://saint11.org/blog/pixel-art-tutorials/).
 * [Voxel graphics description language](https://ldjam.com/events/ludum-dare/41/rogue-party/voxelcode-is-up-and-running).
 * [MagicaVoxel](https://ephtracy.github.io/).
 * Imagemagick [scripts](http://www.fmwconcepts.com/imagemagick/polarblur/index.php).
@@ -90,3 +87,10 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * Very in-depth [book](https://www.interdb.jp/pg/) about PostgreSQL.
 * [D3 Graph Gallery](https://d3-graph-gallery.com/index.html).
 * [xterm colors](https://robotmoon.com/256-colors/).
+
+## Learning resources
+
+* Learn music production with [Abelton](https://learningmusic.ableton.com/).
+* [A couple of tutorials](http://www.kyrieru.com/p/tutorials_19.html) on colors and pixels (NSFW content nearby).
+* Moar [tutorials](http://www.slynyrd.com/blog/2019/2/23/pixelblog-14-cityscapes) on pixeling.
+* GIF pixel [tutorials](https://saint11.org/blog/pixel-art-tutorials/).
