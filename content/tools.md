@@ -90,7 +90,14 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 
 ## Learning resources
 
+### Music
+
 * Learn music production with [Abelton](https://learningmusic.ableton.com/).
+* [Guitar chords](https://www.all-guitar-chords.com/).
+* [Classical music tabs](https://www.classtab.org/).
+
+### Drawing
+
 * [A couple of tutorials](http://www.kyrieru.com/p/tutorials_19.html) on colors and pixels (NSFW content nearby).
 * Moar [tutorials](http://www.slynyrd.com/blog/2019/2/23/pixelblog-14-cityscapes) on pixeling.
 * GIF pixel [tutorials](https://saint11.org/blog/pixel-art-tutorials/).
