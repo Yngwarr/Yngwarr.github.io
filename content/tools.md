@@ -87,6 +87,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * Very in-depth [book](https://www.interdb.jp/pg/) about PostgreSQL.
 * [D3 Graph Gallery](https://d3-graph-gallery.com/index.html).
 * [xterm colors](https://robotmoon.com/256-colors/).
+* [Car size](https://www.carsized.com/en/) comparison.
 
 ## Learning resources
 
