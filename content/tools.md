@@ -98,6 +98,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [Guitar chords](https://www.all-guitar-chords.com/).
 * [Classical music tabs](https://www.classtab.org/).
 * [Musical key characteristics and emotions](https://ledgernote.com/blog/interesting/musical-key-characteristics-emotions/).
+* [Chord maps](https://ledgernote.com/blog/interesting/chord-maps/).
 
 ### Drawing
 
