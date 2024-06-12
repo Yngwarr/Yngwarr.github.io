@@ -50,6 +50,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * Online music tracker: [BassoonTracker](https://www.stef.be/bassoontracker/).
 * Sfx generator: [sfxia](https://rxi.itch.io/sfxia).
 * Online synth: [Uhhyou](https://ryukau.github.io/UhhyouWebSynthesizers/index.html).
+* Generate music with code: [Wavepot](https://wavepot.com/).
 
 ## Game Design
 
