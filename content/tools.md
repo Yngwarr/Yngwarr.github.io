@@ -102,3 +102,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [A couple of tutorials](http://www.kyrieru.com/p/tutorials_19.html) on colors and pixels (NSFW content nearby).
 * Moar [tutorials](http://www.slynyrd.com/blog/2019/2/23/pixelblog-14-cityscapes) on pixeling.
 * GIF pixel [tutorials](https://saint11.org/blog/pixel-art-tutorials/).
+
+### Articles
+
+* [Joys of Small Game Development](https://abagames.github.io/joys-of-small-game-development-en/).
