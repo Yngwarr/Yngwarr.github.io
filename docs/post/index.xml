@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on hardweird inc.</title>
+    <title>Posts on hoodie cat</title>
     <link>/post/</link>
-    <description>Recent content in Posts on hardweird inc.</description>
+    <description>Recent content in Posts on hoodie cat</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate>
@@ -13,14 +13,14 @@
       <link>/post/systemd-services/</link>
       <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
       <guid>/post/systemd-services/</guid>
-      <description>From time to time I stumble upon some server application I want running on my virtual server, be it an anki sync service or a custom-written discord bot. Most of the time I start by running it in a tmux session for several days to see how well it performs and then I write a systemd service, so it works just like a regular daemon app. Here&amp;rsquo;s how I achieve this.</description>
+      <description>&lt;p&gt;From time to time I stumble upon some server application I want running on my&#xA;virtual server, be it an anki sync service or a custom-written discord bot. Most&#xA;of the time I start by running it in a tmux session for several days to see how&#xA;well it performs and then I write a systemd service, so it works just like a&#xA;regular daemon app. Here&amp;rsquo;s how I achieve this.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ludum Dare 53 post-mortem (Early Morning Tofu Delivery)</title>
       <link>/post/tofu-postmortem/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       <guid>/post/tofu-postmortem/</guid>
-      <description>My 14th Ludum Dare in a row have finally finished and it was a wild experience! It was the first time I made a 3D game with Godot and also the very first time I used Godot 4, which turned out to be a bit unstable, but pretty usable.&#xA;As always, I teamed up with my wonderful artist, Syudzius, to take part in our 10th Ludum Dare together. The theme was Delivery and we made the game called Early Morning Tofu Delivery.</description>
+      <description>&lt;p&gt;My 14th Ludum Dare in a row have finally finished and it was a wild experience!&#xA;It was the first time I made a 3D game with Godot and also the very first time I&#xA;used Godot 4, which turned out to be a bit unstable, but pretty usable.&lt;/p&gt;&#xA;&lt;p&gt;As always, I teamed up with my wonderful artist, &lt;a href=&#34;https://twitter.com/syudzius&#34; title=&#34;artist&#39;s twitter&#34;&gt;Syudzius&lt;/a&gt;, to take part&#xA;in our 10th Ludum Dare together. The theme was &lt;em&gt;Delivery&lt;/em&gt; and we made the game&#xA;called &lt;em&gt;Early Morning Tofu Delivery&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
