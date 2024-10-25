@@ -51,6 +51,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * Sfx generator: [sfxia](https://rxi.itch.io/sfxia).
 * Online synth: [Uhhyou](https://ryukau.github.io/UhhyouWebSynthesizers/index.html).
 * Generate music with code: [Wavepot](https://wavepot.com/).
+* [List of VST plugins](https://linuxdaw.org/) available for Linux.
 
 ## Game Design
 
