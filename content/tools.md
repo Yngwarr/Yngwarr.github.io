@@ -22,6 +22,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [Realtime colors](https://realtimecolors.com) for palette testing.
 * [JSPaint](https://jspaint.app/). They say paint is the best tool for pixel art. :)
 * [Explosion Generator](https://explosiongenerator.com/).
+* [Graphite](https://editor.graphite.rs/) vector editor.
 
 ## Free Assets
 
