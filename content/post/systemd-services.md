@@ -28,7 +28,7 @@ WorkingDirectory=/home/user/service
 WantedBy=default.target
 ```
 
-Put it into `/home/user/service/our-service.service` file an you should be good
+Put it into `/etc/systemd/system/our-service.service` file an you should be good
 to go. I've added `After=nginx.service` because most of the time I put my
 services behind nginx reverse proxy.
 
