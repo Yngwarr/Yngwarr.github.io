@@ -60,7 +60,7 @@ this:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">[Install]</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">default.target</span>
-</span></span></code></pre></div><p>Put it into <code>/home/user/service/our-service.service</code> file an you should be good
+</span></span></code></pre></div><p>Put it into <code>/etc/systemd/system/our-service.service</code> file an you should be good
 to go. I&rsquo;ve added <code>After=nginx.service</code> because most of the time I put my
 services behind nginx reverse proxy.</p>
 <p>To install the service copy it to <code>/etc/systemd/system</code> and enable it with <code>sudo systemctl enable our-service.service</code>. To start the service use <code>sudo systemctl start our-service.service</code>.</p>

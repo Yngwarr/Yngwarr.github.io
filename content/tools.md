@@ -30,6 +30,7 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 * [Lucide icons](https://lucide.dev/).
 * [Public Domain textures](https://ambientcg.com/).
 * [Low-poly 3D models](https://poly.pizza/).
+* [Old-school fonts](https://int10h.org/oldschool-pc-fonts/).
 
 ## Sounds and Music
 
