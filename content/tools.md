@@ -112,3 +112,4 @@ All the gamedev-related links I stumbled upon and found pretty cool.
 ### Articles
 
 * [Joys of Small Game Development](https://abagames.github.io/joys-of-small-game-development-en/).
+* [Programming Vehicles in Games](https://wassimulator.com/blog/programming/programming_vehicles_in_games.html).
