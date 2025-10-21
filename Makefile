@@ -1,6 +1,6 @@
 all:
 	hugo -d docs
 serve:
-	hugo server
+	hugo server -d docs
 drafts:
-	hugo server --buildDrafts --buildFuture
+	hugo server -d docs --buildDrafts --buildFuture
