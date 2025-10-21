@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="Pigeons aren&#39;t Real by Yngvarr, syudzius
+
+
+
+A little over a week ago we released a game called Pigeons aren&rsquo;t Real. In this devlog I&rsquo;ll  describe the development process and share some insights I gained from it.
+We made this game as an entry for a Regional GameDev Hackathon that took place offline, in a beautiful city of Podgorica. As always, we participated as a team of two, with syudzius being an artist and me doing the programming.">  
+
+  <title>
+    
+      Regional GameDev Hackathon post-mortem (Pigeons aren&#39;t Real)
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.70d6360521aab24178335699568639ac40e546fcd12f51809a55c49783ab3dead07c7e9aa016f0469403cf03e1f9d1dd99009183926d4ee5dfe86206e7ffd3b5.css" integrity="sha512-cNY2BSGqskF4M1aZVoY5rEDlRvzRL1GAmlXEl4OrPerQfH6aoBbwRpQDzwPh&#43;dHdmQCRg5JtTuXf6GIG5//TtQ==" />
+  <link rel="alternate" type="application/rss+xml" title="hardweird inc. posts" href="https://hardweird.net/index.xml">
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">&lt;- back</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2025-10-21 00:00:00 &#43;0000 UTC">
+            2025-10-21
+        </time>
+    </p>
+
+    <h1>Regional GameDev Hackathon post-mortem (Pigeons aren&#39;t Real)</h1>
+
+    
+
+    
+
+<iframe frameborder="0" src="https://itch.io/embed/3954118?bg_color=333941&amp;fg_color=ffffff&amp;link_color=afbfd2&amp;border_color=6f7882" width="552" height="167"><a href="https://yngvarr.itch.io/pigeons-arent-real">Pigeons aren't Real by Yngvarr, syudzius</a></iframe>
+
+
+
+<p>A little over a week ago we released a game called <em>Pigeons aren&rsquo;t Real</em>. In this devlog I&rsquo;ll  describe the development process and share some insights I gained from it.</p>
+<p>We made this game as an entry for a <em>Regional GameDev Hackathon</em> that took place offline, in a beautiful city of Podgorica. As always, we participated as a team of two, with <a href="https://syudzius.itch.io/">syudzius</a> being an artist and me doing the programming.</p>
+<p>The theme was <em>&ldquo;watching&rdquo;</em> and we liked it. Honestly, as a person who used to only jam in Ludum Dares, I&rsquo;m not used to this kind of treats. :) Not to say we didn&rsquo;t struggle through the process of searching for the idea, but still, it only took us a couple of hours, not a whole day as it did on a previous Global Game Jam. We had a couple of generic ideas, a couple really promising ones with questionable scope, but once we reached The Idea, we instantly locked on it.</p>
+<figure><img src="/post/pigeons-postmortem/mindmap.png"
+    alt="A mindmap of ideas for a game jam. There are 3 branches coming from the word &#39;Watching&#39; in the center: &#39;Someone watching&#39; branches to a single leaf &#39;Heist&#39;, &#39;No watching&#39; branches to &#39;A game for blind gamers&#39; to &#39;Find your dog in a maze full of other npcs&#39;, and &#39;You are watching&#39; that has 4 leaves, namely &#39;Roomba sokoban&#39;, &#39;Puzzle about fixing your TV&#39;, &#39;Self aware micro manager&#39;, and &#39;Moorhuhn but pigeons are government surveillance drones&#39;. The last leaf is highlighted with a red outline."><figcaption>
+      <p>Mindmaps for ideas used to be much bigger.</p>
+    </figcaption>
+</figure>
+
+<p>If you already played this game (thank you!) you know which idea won: shooting surveillance drones that pretend to be pigeons in a Moorhuhn-like action (game-design-wise it turned out to be more similar to <a href="https://store.steampowered.com/app/303590/Hidden_in_Plain_Sight/">Hidden in Plain Sight</a>, which is even better). We liked the idea because it seemed easy to implement, trivial to explain and fun to play.</p>
+<p>Most of the development time we spent dealing with pigeons: programming them to move around and do stuff and drawing frame-by-frame animations for actions. After a couple of concepts, my wife chose the cartoonish style she excels at for drawing. We had a lot of fun imagining miriads of things pigeons would do, but in the end decided to concentrate on three suspicious actions for robots and two innocent ones for pigeons.</p>
+<figure><img src="/post/pigeons-postmortem/sketch.png"
+    alt="Two pages of a sketchbook. On the left there are two sketches of a game&#39;s scenes: a roadside and a park. Below that there are sketches of a crosshair, a pigeon taking off, and a shot robot pigeon falling down. On the left there are several sketches of pigeons and pigeon-looking robots."><figcaption>
+      <p>Sketches are a big part of game making.</p>
+    </figcaption>
+</figure>
+
+<p>On the programming side, pigeons turned out to be the purest case of finite state machine, or FSM for short. Luckily, this spring I spent some time implementing a FSM for an unreleased vending machine game, so I took the code from there. I can&rsquo;t overestimate the importance of that learning project for this jam: not only did it provide me with a well-documented battle-tested library to use, it also helped me see the FSM behind the pigeon&rsquo;s logic. Always do your learning projects, even if you know they may never see the light of day! Still helps a lot! :)</p>
+<figure><img src="/post/pigeons-postmortem/fsm.png"
+    alt="A block scheme of FSM&#39;s states. The flow starts from a green dot on the right, from there an arrow goes to the &#39;Walking&#39; state. From &#39;Walking&#39; there is an arrow to &#39;Idle&#39; and vice versa. From &#39;Idle&#39; there also is an arrow to &#39;Flying away&#39;, and then to a red dot, which means that the flow is terminated. All states have an arrow to the &#39;Shot down&#39; state, from which there is an arrow to a second red dot. &#39;Idle&#39; and &#39;Shot down&#39; have a red asterisk at the end of the name, &#39;Flying away&#39; has a red note that says &#39;Propeller&#39;."><figcaption>
+      <p>States of pigeons. Red asterisk means there is an alternative behavior for robots.</p>
+    </figcaption>
+</figure>
+
+<p>Despite the simplicity of a state machine, programming pigeons wasn&rsquo;t as trivial as I expected. For example, there are 3 different types of idle animations: basic ones that can just be played with no problem, looped ones that stop on timer, and a convoluted looped one with extra intro and outro animaitons. All of these are handled by a single state and need to be accounted for. This single state turned out to be the most error-prone part of the entire game&rsquo;s codebase.</p>
+<p>Balancing the game was also a tricky process: we mostly went by intuition, but a last-moment playtest shown that we were too careful with the difficulty, to the point of making the game boring. We managed to squeeze one little value change literally in the last minutes of the game jam, making the game more chaotic and fun. Don&rsquo;t be like us! Playtest early, playtest often, have a game over condition as soon as you can!</p>
+<p>Despite all the trouble, the game turned out to be very fun and also hilarious! Shout out to <a href="https://syudzius.itch.io/">syudzius</a> for picking and adding sounds to the game, they played a critical role in the &ldquo;hilarious&rdquo; part. She also added a tutorial, which is a very important feature we often overlook.</p>
+<p>As promised, key insights:</p>
+<ul>
+<li>Learning projects are the giants you stand on the shoulders of. Even if you don&rsquo;t feel like reusing previously written code in game jams, investing time into learning helps you load concepts in your brain and opens possibilities you&rsquo;d never noticed otherwise.</li>
+<li>Tutorials are important, even for games that seem simple to pick up.</li>
+<li>As I said: playtest early! Which means that you want to have something playable as early as you can. Rough, imperfect, placeholder-ridden, but playable.</li>
+<li>An artist who knows how to code is an unstoppable game-making beast.</li>
+</ul>
+<hr>
+<p>If you read this far, thank you, I hope it was interesting! You can have this tangerine: 🍊. Check out the game and keep being awesome!</p>
+
+</article>
+
+            </div>
+        </main>
+    </body></html>

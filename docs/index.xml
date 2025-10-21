@@ -6,8 +6,15 @@
     <description>Recent content on hoodie cat</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Regional GameDev Hackathon post-mortem (Pigeons aren&#39;t Real)</title>
+      <link>/post/pigeons-postmortem/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>/post/pigeons-postmortem/</guid>
+      <description>&lt;iframe frameborder=&#34;0&#34; src=&#34;https://itch.io/embed/3954118?bg_color=333941&amp;amp;fg_color=ffffff&amp;amp;link_color=afbfd2&amp;amp;border_color=6f7882&#34; width=&#34;552&#34; height=&#34;167&#34;&gt;&lt;a href=&#34;https://yngvarr.itch.io/pigeons-arent-real&#34;&gt;Pigeons aren&#39;t Real by Yngvarr, syudzius&lt;/a&gt;&lt;/iframe&gt;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;A little over a week ago we released a game called &lt;em&gt;Pigeons aren&amp;rsquo;t Real&lt;/em&gt;. In this devlog I&amp;rsquo;ll  describe the development process and share some insights I gained from it.&lt;/p&gt;&#xA;&lt;p&gt;We made this game as an entry for a &lt;em&gt;Regional GameDev Hackathon&lt;/em&gt; that took place offline, in a beautiful city of Podgorica. As always, we participated as a team of two, with &lt;a href=&#34;https://syudzius.itch.io/&#34;&gt;syudzius&lt;/a&gt; being an artist and me doing the programming.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Creating custom systemd services</title>
       <link>/post/systemd-services/</link>
