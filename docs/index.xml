@@ -6,8 +6,15 @@
     <description>Recent content on hoodie cat</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Don&#39;t save Resources to user://</title>
+      <link>/post/dont-save-resources/</link>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      <guid>/post/dont-save-resources/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t save stuff in Godot very often. That&amp;rsquo;s how I ended up on &lt;a href=&#34;https://docs.godotengine.org/en/stable/tutorials/io/saving_games.html&#34;&gt;Saving games&lt;/a&gt; page of the docs. In the end of the page, there was a heated discussion about using &lt;code&gt;ResourceSaver&lt;/code&gt; instead of saving to JSON, as the article suggests.&lt;/p&gt;&#xA;&lt;p&gt;I knew about &lt;code&gt;ResourceSaver&lt;/code&gt;, I used it for my jam project when I was desperate for any way to save progress with minimal amount of code. It worked, but even then I felt uncomfortable to save player&amp;rsquo;s data in an internal format. I thought that in a game of a bigger scale, it would be unwise to use a format that can, most probably, will be changed in the future by the engine&amp;rsquo;s development team.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Regional GameDev Hackathon post-mortem (Pigeons aren&#39;t Real)</title>
       <link>/post/pigeons-postmortem/</link>
