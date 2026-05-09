@@ -56,31 +56,31 @@ I knew about ResourceSaver, I used it for my jam project when I was desperate fo
 </span></span><span style="display:flex;"><span>	save_data <span style="color:#f92672">=</span> SaveFile<span style="color:#f92672">.</span><span style="color:#a6e22e">new</span>(<span style="color:#ae81ff">3</span>)
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">ResourceSaver</span><span style="color:#f92672">.</span><span style="color:#a6e22e">save</span>(save_data, <span style="color:#e6db74">&#34;user://save.tres&#34;</span>)
 </span></span></code></pre></div><p>If you open your save file with a text editor, it looks like this:</p>
-<pre tabindex="0"><code>[gd_resource type=&#34;Resource&#34; script_class=&#34;SaveFile&#34; format=3]
-
-[ext_resource type=&#34;Script&#34; path=&#34;res://save_file.gd&#34; id=&#34;1_dw8s2&#34;]
-
-[resource]
-script = ExtResource(&#34;1_dw8s2&#34;)
-lives = 3
-</code></pre><p>There are 2 changes you need to make to execute arbitrary code. First, add a sub-resource that contains a script. This script can do absolutely anything, mine will show a little dialog message using an external program.</p>
-<pre tabindex="0"><code>[sub_resource type=&#34;GDScript&#34; id=&#34;1&#34;]
-script/source = &#34;extends Resource; func _init(): OS.execute(&#39;kdialog&#39;, [&#39;--yesno&#39;, &#39;Been pwned lately?&#39;, &#39;--no-label&#39;, &#39;Hell yes!&#39;])&#34;
-</code></pre><p>Now we need a way to execute the code. Notice how we use <code>_init</code> function here, it&rsquo;s called every time the resource is loaded. Changing <code>script</code> property of <code>[resource]</code> will do it:</p>
-<pre tabindex="0"><code>[resource]
-script = SubResource(&#34;1&#34;)
-</code></pre><p>That&rsquo;s all! Full compromised save file file looks like this:</p>
-<pre tabindex="0"><code>[gd_resource type=&#34;Resource&#34; script_class=&#34;SaveFile&#34; format=3]
-
-[ext_resource type=&#34;Script&#34; path=&#34;res://save_file.gd&#34; id=&#34;1_dw8s2&#34;]
-
-[sub_resource type=&#34;GDScript&#34; id=&#34;1&#34;]
-script/source = &#34;extends Resource; func _init(): OS.execute(&#39;kdialog&#39;, [&#39;--yesno&#39;, &#39;Been pwned lately?&#39;, &#39;--no-label&#39;, &#39;Hell yes!&#39;])&#34;
-
-[resource]
-script = SubResource(&#34;1&#34;)
-lives = 3
-</code></pre><p>And it works! You don&rsquo;t even need to do anything besides loading the file. So every time your game does:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>[gd_resource type=&#34;Resource&#34; script_class=&#34;SaveFile&#34; format=3]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[ext_resource type=&#34;Script&#34; path=&#34;res://save_file.gd&#34; id=&#34;1_dw8s2&#34;]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[resource]
+</span></span><span style="display:flex;"><span>script = ExtResource(&#34;1_dw8s2&#34;)
+</span></span><span style="display:flex;"><span>lives = 3
+</span></span></code></pre></div><p>There are 2 changes you need to make to execute arbitrary code. First, add a sub-resource that contains a script. This script can do absolutely anything, mine will show a little dialog message using an external program.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[sub_resource type=&#34;GDScript&#34; id=&#34;1&#34;]
+</span></span><span style="display:flex;"><span>script/source = &#34;extends Resource; func _init(): OS.execute(&#39;kdialog&#39;, [&#39;--yesno&#39;, &#39;Been pwned lately?&#39;, &#39;--no-label&#39;, &#39;Hell yes!&#39;])&#34;
+</span></span></code></pre></div><p>Now we need a way to execute the code. Notice how we use <code>_init</code> function here, it&rsquo;s called every time the resource is loaded. Changing <code>script</code> property of <code>[resource]</code> will do it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[resource]
+</span></span><span style="display:flex;"><span>script = SubResource(&#34;1&#34;)
+</span></span></code></pre></div><p>That&rsquo;s all! Full compromised save file file looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[gd_resource type=&#34;Resource&#34; script_class=&#34;SaveFile&#34; format=3]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[ext_resource type=&#34;Script&#34; path=&#34;res://save_file.gd&#34; id=&#34;1_dw8s2&#34;]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[sub_resource type=&#34;GDScript&#34; id=&#34;1&#34;]
+</span></span><span style="display:flex;"><span>script/source = &#34;extends Resource; func _init(): OS.execute(&#39;kdialog&#39;, [&#39;--yesno&#39;, &#39;Been pwned lately?&#39;, &#39;--no-label&#39;, &#39;Hell yes!&#39;])&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[resource]
+</span></span><span style="display:flex;"><span>script = SubResource(&#34;1&#34;)
+</span></span><span style="display:flex;"><span>lives = 3
+</span></span></code></pre></div><p>And it works! You don&rsquo;t even need to do anything besides loading the file. So every time your game does:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-gdscript" data-lang="gdscript"><span style="display:flex;"><span><span style="color:#a6e22e">ResourceLoader</span><span style="color:#f92672">.</span>load(<span style="color:#e6db74">&#34;user://save.tres&#34;</span>)
 </span></span></code></pre></div><p>You&rsquo;ll see the message:</p>
 <figure><img src="/post/dont-save-resources/message.png"
