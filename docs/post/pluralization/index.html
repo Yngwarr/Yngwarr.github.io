@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="During the development of Tens! (out now on Poki, check it out), we decided that it would be cool to localize our game to languages we expect to be popular. We knew that Godot has a built-in i18n API (i18n is short for internationalization) and it was a perfect opportunity to learn how to use it.
+Godot supports 2 formats of localization files: gettext (also known as PO files) and CSV (also known as an easy way to store spreadsheets in text). We wanted the simplest solution, so we went with the latter. It was sufficient until we stumbled upon one tiny phrase that needed pluralization.">  
+
+  <title>
+    
+      The missing guide to pluralization in CSV in Godot
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.de0b3181582eaa151e25898d9dd415d49091fc7d7bddf29832d6bc07f7678e9199a0a3c84a642b65fb9d9d300816ab8aef1d576f8737edae62046c4d06a3575f.css" integrity="sha512-3gsxgVguqhUeJYmNndQV1JCR/H173fKYMta8B/dnjpGZoKPISmQrZfudnTAIFquK7x1Xb4c37a5iBGxNBqNXXw==" />
+  <link rel="alternate" type="application/rss+xml" title="hardweird inc. posts" href="https://hardweird.net/index.xml">
+  
+</head>
+<body a="light">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">&lt;- back</a>
+
+<article>
+    <p class="post-meta">
+        <time datetime="2026-05-25 00:00:00 &#43;0000 UTC">
+            2026-05-25
+        </time>
+    </p>
+
+    <h1>The missing guide to pluralization in CSV in Godot</h1>
+
+    
+
+    <p>During the development of <a href="https://poki.com/en/g/tens">Tens!</a> (out now on Poki, check it out), we decided that it would be cool to localize our game to languages we expect to be popular. We knew that Godot has a built-in <a href="https://docs.godotengine.org/en/stable/tutorials/i18n/internationalizing_games.html">i18n API</a> (i18n is short for internationalization) and it was a perfect opportunity to learn how to use it.</p>
+<p>Godot supports 2 formats of localization files: <a href="https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_gettext.html">gettext</a> (also known as PO files) and <a href="https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_spreadsheets.html">CSV</a> (also known as an easy way to store spreadsheets in text). We wanted the simplest solution, so we went with the latter. It was sufficient until we stumbled upon one tiny phrase that needed pluralization.</p>
+<p>Until Godot 4.6, there was no way to pluralize phrases if you use CSV. Now there is one, but <a href="https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_spreadsheets.html#specifying-plural-forms">documentation</a> for this feature is a bit lacking, and it misses the most important piece that will save you a lot of figuring out.</p>
+<p>Docs mention a <code>?plural</code> column that can be used for simple pluralization, like in English you only have either <code>1 die</code> or <code>many dice</code>. They also mention some elusive <code>?pluralrule</code> that looks like a piece of code and it&rsquo;s not really obvious how it&rsquo;s constructed and what it affects. Actually, it&rsquo;s a feature of aforementioned <em>gettext</em> that was already used by Godot in PO file processor and now it&rsquo;s available for CSV users too. If you want to understand how it works, read <a href="https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html">this page</a>.</p>
+<p>If you don&rsquo;t want to figure out how <code>?pluralrule</code> works and what is the correct rule for your language, great news: you don&rsquo;t have to. Godot has built-in pluralization rules for many languages and will use them automatically if you format your CSV right. A pluralized phrase is formatted like this:</p>
+<table>
+  <thead>
+      <tr>
+          <th>keys</th>
+          <th>?plural</th>
+          <th>en</th>
+          <th>ru</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SCORE</td>
+          <td>-</td>
+          <td>%d point</td>
+          <td>%d очко</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td>%d points</td>
+          <td>%d очка</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>%d очков</td>
+      </tr>
+  </tbody>
+</table>
+<p>Or in CSV:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-csv" data-lang="csv"><span style="display:flex;"><span><span style="color:#e6db74">keys</span>,<span style="color:#e6db74">?plural</span>,<span style="color:#e6db74">en</span>,<span style="color:#e6db74">ru</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">SCORE</span>,,<span style="color:#e6db74">%d points</span>,<span style="color:#e6db74"> %d очко</span>
+</span></span><span style="display:flex;"><span>,,<span style="color:#e6db74">%d points</span>,<span style="color:#e6db74">%d очка</span>
+</span></span><span style="display:flex;"><span>,,,<span style="color:#e6db74">%d очков</span>
+</span></span></code></pre></div><p>Note that:</p>
+<ul>
+<li>You <strong>must</strong> have a <code>?plural</code> column.</li>
+<li>For a pluralized entry, <code>?plural</code> column <strong>must</strong> contain something (anything, as far as I know, the value won&rsquo;t be used).</li>
+<li>The order of translations must abide Godot&rsquo;s plurification rules.</li>
+</ul>
+<p>Rules themselves are described in Godot&rsquo;s code <a href="https://github.com/godotengine/godot/blob/fa09dd17a68a5741cb2361f1d07af271c7a40c4f/core/string/locales.h#L1824">here</a>. Below is an explanation in English, use search to find your language.</p>
+<h2 id="list-of-built-in-pluralization-rules">List of Built-in Pluralization Rules</h2>
+<ul>
+<li>Languages with the same rules as English (everything that&rsquo;s not 1 is plural) or French (everything more than 1 is plural):
+<ol>
+<li>Singular form.</li>
+<li>Plural form.</li>
+</ol>
+</li>
+<li>Icelandic, Macedonian (<code>is mk</code>):
+<ol>
+<li>Singular when the last digit is 1 but the number is not 11.</li>
+<li>Plural for all other numbers.</li>
+</ol>
+</li>
+<li>Central Atlas Tamazight (<code>tzm</code>):
+<ol>
+<li>Singular for 0, 1, and all numbers from 11 to 99.</li>
+<li>Plural for 2–10 and for 100 and above.</li>
+</ol>
+</li>
+<li>Amharic, Assamese, Bengali, Dogri, Persian, Gujarati, Hindi, Kannada, Nigerian Pidgin, Zulu (<code>am as bn doi fa gu hi kn pcm zu</code>):
+<ol>
+<li>Singular for 0 and 1.</li>
+<li>Plural for 2 and above.</li>
+</ol>
+</li>
+<li>Cebuano, Filipino, Tagalog (<code>ceb fil tl</code>):
+<ol>
+<li>Singular for 1, 2, and 3, and for any number that does not end in 4, 6, or 9.</li>
+<li>Plural for numbers ending in 4, 6, or 9.</li>
+</ol>
+</li>
+<li>Prussian (<code>prg</code>):
+<ol>
+<li>First form for numbers ending in 0 and for numbers 11–19.</li>
+<li>Second form for numbers ending in 1, except 11.</li>
+<li>Third form for all remaining numbers.</li>
+</ol>
+</li>
+<li>Latvian (<code>lv</code>):
+<ol>
+<li>First form for numbers ending in 1, except 11.</li>
+<li>Second form for all non-zero numbers (including 11).</li>
+<li>Third form for 0.</li>
+</ol>
+</li>
+<li>Lithuanian (<code>lt</code>):
+<ol>
+<li>First form for numbers ending in 1, except 11.</li>
+<li>Second form for numbers ending in 2–9, excluding the teens (12–19).</li>
+<li>Third form for 0, for the teens (10–19), and for numbers ending in 0.</li>
+</ol>
+</li>
+<li>Belarusian, Croatian, Russian, Serbian, Ukrainian (<code>be hr ru sr uk</code>):
+<ol>
+<li>First form for numbers ending in 1, except 11.</li>
+<li>Second form for numbers ending in 2–4, except the teens (12–14).</li>
+<li>Third form for everything else.</li>
+</ol>
+</li>
+<li>Bosnian, Serbo-Croatian (<code>bs sh</code>):
+<ol>
+<li>First form for numbers ending in 1, except 11.</li>
+<li>Second form for numbers ending in 2–4, except 12–14.</li>
+<li>Third form for everything else.</li>
+</ol>
+</li>
+<li>Langi (<code>lag</code>):
+<ol>
+<li>First form for 0.</li>
+<li>Second form for 1.</li>
+<li>Third form for 2 and above.</li>
+</ol>
+</li>
+<li>Anii, Colognian (<code>blo ksh</code>):
+<ol>
+<li>First form for 0.</li>
+<li>Second form for 1.</li>
+<li>Third form for 2 and above.</li>
+</ol>
+</li>
+<li>Tachelhit (<code>shi</code>):
+<ol>
+<li>First form for 0 and 1.</li>
+<li>Second form for 2–10.</li>
+<li>Third form for 11 and above.</li>
+</ol>
+</li>
+<li>Polish (<code>pl</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for numbers ending in 2–4, except the teens (12–14).</li>
+<li>Third form for everything else.</li>
+</ol>
+</li>
+<li>Moldavian (<code>mo</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for 0 and for numbers whose last two digits are 01–19 (except when the number itself is exactly 1).</li>
+<li>Third form for numbers whose last two digits are 00 or 20–99.</li>
+</ol>
+</li>
+<li>Inuktitut, Hebrew, Nama, Northern Sami, Sami, Southern Sami, Lule Sami, Inari Sami, Santali, Skolt Sami (<code>iu iw naq sat se sma smi smj smn sms</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for 2.</li>
+<li>Third form for everything else.</li>
+</ol>
+</li>
+<li>Czech, Slovak (<code>cs sk</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for 2–4.</li>
+<li>Third form for 0 and 5 and above.</li>
+</ol>
+</li>
+<li>Romanian (<code>ro</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for 0 and for numbers whose last two digits are 01–19.</li>
+<li>Third form for numbers whose last two digits are 00 or 20–99.</li>
+</ol>
+</li>
+<li>Irish (<code>ga</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for 2.</li>
+<li>Third form for everything else.</li>
+</ol>
+</li>
+<li>Slovenian (<code>sl</code>):
+<ol>
+<li>First form for numbers ending in 01.</li>
+<li>Second form for numbers ending in 02.</li>
+<li>Third form for numbers ending in 03 or 04.</li>
+<li>Fourth form for everything else.</li>
+</ol>
+</li>
+<li>Lower Sorbian, Upper Sorbian (<code>dsb hsb</code>):
+<ol>
+<li>First form for numbers ending in 01.</li>
+<li>Second form for numbers ending in 02.</li>
+<li>Third form for numbers ending in 03 or 04.</li>
+<li>Fourth form for everything else.</li>
+</ol>
+</li>
+<li>Manx (<code>gv</code>):
+<ol>
+<li>First form for numbers ending in 1.</li>
+<li>Second form for numbers ending in 2.</li>
+<li>Third form for numbers ending in 00, 20, 40, 60, or 80.</li>
+<li>Fourth form for everything else.</li>
+</ol>
+</li>
+<li>Scottish Gaelic (<code>gd</code>):
+<ol>
+<li>First form for 1 and 11.</li>
+<li>Second form for 2 and 12.</li>
+<li>Third form for 3–10 and 13–19.</li>
+<li>Fourth form for everything else (0 and 20+).</li>
+</ol>
+</li>
+<li>Breton (<code>br</code>):
+<ol>
+<li>First form for numbers ending in 1, except 11, 71, and 91.</li>
+<li>Second form for numbers ending in 2, except 12, 72, and 92.</li>
+<li>Third form for numbers ending in 3, 4, or 9, except those in the ranges 13–19, 73–79, and 93–99.</li>
+<li>Fourth form for non-zero multiples of 1,000,000.</li>
+<li>Fifth form for everything else.</li>
+</ol>
+</li>
+<li>Maltese (<code>mt</code>):
+<ol>
+<li>First form for 1.</li>
+<li>Second form for 2.</li>
+<li>Third form for 0 and for numbers ending in 03–10.</li>
+<li>Fourth form for numbers ending in 11–19.</li>
+<li>Fifth form for everything else.</li>
+</ol>
+</li>
+<li>Cornish (<code>kw</code>):
+<ol>
+<li>First form for 0.</li>
+<li>Second form for 1.</li>
+<li>Third form for numbers ending in 02, 22, 42, 62, or 82, and for certain round numbers.</li>
+<li>Fourth form for numbers ending in 03, 23, 43, 63, or 83.</li>
+<li>Fifth form for numbers ending in 01, 21, 41, 61, or 81 (except 1 itself).</li>
+<li>Sixth form for everything else.</li>
+</ol>
+</li>
+<li>Arabic, Najdi Arabic (<code>ar ars</code>):
+<ol>
+<li>First form for 0.</li>
+<li>Second form for 1.</li>
+<li>Third form for 2.</li>
+<li>Fourth form for numbers ending in 03–10.</li>
+<li>Fifth form for numbers ending in 11–99.</li>
+<li>Sixth form for numbers ending in 00, 01, or 02 (i.e., 100, 101, 102, 200, etc.).</li>
+</ol>
+</li>
+<li>Welsh (<code>cy</code>):
+<ol>
+<li>First form for 0.</li>
+<li>Second form for 1.</li>
+<li>Third form for 2.</li>
+<li>Fourth form for 3.</li>
+<li>Fifth form for 6.</li>
+<li>Sixth form for everything else.</li>
+</ol>
+</li>
+</ul>
+
+</article>
+
+            </div>
+        </main>
+    </body></html>

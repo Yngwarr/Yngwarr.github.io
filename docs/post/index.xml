@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on hoodie cat</title>
-    <link>/post/</link>
+    <link>//localhost:1313/post/</link>
     <description>Recent content in Posts on hoodie cat</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 09 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Don&#39;t save Resources to user://</title>
-      <link>/post/dont-save-resources/</link>
+      <link>//localhost:1313/post/dont-save-resources/</link>
       <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
-      <guid>/post/dont-save-resources/</guid>
+      <guid>//localhost:1313/post/dont-save-resources/</guid>
       <description>&lt;p&gt;I don&amp;rsquo;t save stuff in Godot very often. That&amp;rsquo;s how I ended up on &lt;a href=&#34;https://docs.godotengine.org/en/stable/tutorials/io/saving_games.html&#34;&gt;Saving games&lt;/a&gt; page of the docs. In the end of the page, there was a heated discussion about using &lt;code&gt;ResourceSaver&lt;/code&gt; instead of saving to JSON, as the article suggests.&lt;/p&gt;&#xA;&lt;p&gt;I knew about &lt;code&gt;ResourceSaver&lt;/code&gt;, I used it for my jam project when I was desperate for any way to save progress with minimal amount of code. It worked, but even then I felt uncomfortable to save player&amp;rsquo;s data in an internal format. I thought that in a game of a bigger scale, it would be unwise to use a format that can, most probably, will be changed in the future by the engine&amp;rsquo;s development team.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Regional GameDev Hackathon post-mortem (Pigeons aren&#39;t Real)</title>
-      <link>/post/pigeons-postmortem/</link>
+      <link>//localhost:1313/post/pigeons-postmortem/</link>
       <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>/post/pigeons-postmortem/</guid>
+      <guid>//localhost:1313/post/pigeons-postmortem/</guid>
       <description>&lt;iframe frameborder=&#34;0&#34; src=&#34;https://itch.io/embed/3954118?bg_color=333941&amp;amp;fg_color=ffffff&amp;amp;link_color=afbfd2&amp;amp;border_color=6f7882&#34; width=&#34;552&#34; height=&#34;167&#34;&gt;&lt;a href=&#34;https://yngvarr.itch.io/pigeons-arent-real&#34;&gt;Pigeons aren&#39;t Real by Yngvarr, syudzius&lt;/a&gt;&lt;/iframe&gt;&#xA;&#xA;&#xA;&#xA;&lt;p&gt;A little over a week ago we released a game called &lt;em&gt;Pigeons aren&amp;rsquo;t Real&lt;/em&gt;. In this devlog I&amp;rsquo;ll  describe the development process and share some insights I gained from it.&lt;/p&gt;&#xA;&lt;p&gt;We made this game as an entry for a &lt;em&gt;Regional GameDev Hackathon&lt;/em&gt; that took place offline, in a beautiful city of Podgorica. As always, we participated as a team of two, with &lt;a href=&#34;https://syudzius.itch.io/&#34;&gt;syudzius&lt;/a&gt; being an artist and me doing the programming.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating custom systemd services</title>
-      <link>/post/systemd-services/</link>
+      <link>//localhost:1313/post/systemd-services/</link>
       <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/post/systemd-services/</guid>
+      <guid>//localhost:1313/post/systemd-services/</guid>
       <description>&lt;p&gt;From time to time I stumble upon some server application I want running on my&#xA;virtual server, be it an anki sync service or a custom-written discord bot. Most&#xA;of the time I start by running it in a tmux session for several days to see how&#xA;well it performs and then I write a systemd service, so it works just like a&#xA;regular daemon app. Here&amp;rsquo;s how I achieve this.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ludum Dare 53 post-mortem (Early Morning Tofu Delivery)</title>
-      <link>/post/tofu-postmortem/</link>
+      <link>//localhost:1313/post/tofu-postmortem/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>/post/tofu-postmortem/</guid>
+      <guid>//localhost:1313/post/tofu-postmortem/</guid>
       <description>&lt;p&gt;My 14th Ludum Dare in a row have finally finished and it was a wild experience!&#xA;It was the first time I made a 3D game with Godot and also the very first time I&#xA;used Godot 4, which turned out to be a bit unstable, but pretty usable.&lt;/p&gt;&#xA;&lt;p&gt;As always, I teamed up with my wonderful artist, &lt;a href=&#34;https://twitter.com/syudzius&#34; title=&#34;artist&#39;s twitter&#34;&gt;Syudzius&lt;/a&gt;, to take part&#xA;in our 10th Ludum Dare together. The theme was &lt;em&gt;Delivery&lt;/em&gt; and we made the game&#xA;called &lt;em&gt;Early Morning Tofu Delivery&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

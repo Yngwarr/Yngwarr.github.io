@@ -2,114 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/post/dont-save-resources/</loc>
+    <loc>//localhost:1313/post/dont-save-resources/</loc>
     <lastmod>2026-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/</loc>
+    <loc>//localhost:1313/post/</loc>
     <lastmod>2026-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/pigeons-postmortem/</loc>
+    <loc>//localhost:1313/post/pigeons-postmortem/</loc>
     <lastmod>2025-10-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/systemd-services/</loc>
+    <loc>//localhost:1313/post/systemd-services/</loc>
     <lastmod>2024-02-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/tofu-postmortem/</loc>
+    <loc>//localhost:1313/post/tofu-postmortem/</loc>
     <lastmod>2023-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/radio/</loc>
+    <loc>//localhost:1313/radio/</loc>
     <lastmod>2023-05-11T22:02:33+02:00</lastmod>
   </url><url>
-    <loc>/tools/</loc>
+    <loc>//localhost:1313/tools/</loc>
     <lastmod>2023-05-11T21:57:59+02:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2022-08-25T21:30:04+08:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url><url>
-    <loc>/wushu/</loc>
+    <loc>//localhost:1313/wushu/</loc>
   </url><url>
-    <loc>/wushu/10/</loc>
+    <loc>//localhost:1313/wushu/10/</loc>
   </url><url>
-    <loc>/wushu/12/</loc>
+    <loc>//localhost:1313/wushu/12/</loc>
   </url><url>
-    <loc>/wushu/27/</loc>
+    <loc>//localhost:1313/wushu/27/</loc>
   </url><url>
-    <loc>/wushu/17/</loc>
+    <loc>//localhost:1313/wushu/17/</loc>
   </url><url>
-    <loc>/wushu/31/</loc>
+    <loc>//localhost:1313/wushu/31/</loc>
   </url><url>
-    <loc>/wushu/08/</loc>
+    <loc>//localhost:1313/wushu/08/</loc>
   </url><url>
-    <loc>/wushu/16/</loc>
+    <loc>//localhost:1313/wushu/16/</loc>
   </url><url>
-    <loc>/wushu/30/</loc>
+    <loc>//localhost:1313/wushu/30/</loc>
   </url><url>
-    <loc>/wushu/28/</loc>
+    <loc>//localhost:1313/wushu/28/</loc>
   </url><url>
-    <loc>/wushu/22/</loc>
+    <loc>//localhost:1313/wushu/22/</loc>
   </url><url>
-    <loc>/wushu/39/</loc>
+    <loc>//localhost:1313/wushu/39/</loc>
   </url><url>
-    <loc>/wushu/32/</loc>
+    <loc>//localhost:1313/wushu/32/</loc>
   </url><url>
-    <loc>/wushu/04/</loc>
+    <loc>//localhost:1313/wushu/04/</loc>
   </url><url>
-    <loc>/wushu/11/</loc>
+    <loc>//localhost:1313/wushu/11/</loc>
   </url><url>
-    <loc>/wushu/06/</loc>
+    <loc>//localhost:1313/wushu/06/</loc>
   </url><url>
-    <loc>/wushu/09/</loc>
+    <loc>//localhost:1313/wushu/09/</loc>
   </url><url>
-    <loc>/wushu/07/</loc>
+    <loc>//localhost:1313/wushu/07/</loc>
   </url><url>
-    <loc>/wushu/05/</loc>
+    <loc>//localhost:1313/wushu/05/</loc>
   </url><url>
-    <loc>/wushu/26/</loc>
+    <loc>//localhost:1313/wushu/26/</loc>
   </url><url>
-    <loc>/wushu/29/</loc>
+    <loc>//localhost:1313/wushu/29/</loc>
   </url><url>
-    <loc>/wushu/14/</loc>
+    <loc>//localhost:1313/wushu/14/</loc>
   </url><url>
-    <loc>/wushu/34/</loc>
+    <loc>//localhost:1313/wushu/34/</loc>
   </url><url>
-    <loc>/wushu/03/</loc>
+    <loc>//localhost:1313/wushu/03/</loc>
   </url><url>
-    <loc>/wushu/02/</loc>
+    <loc>//localhost:1313/wushu/02/</loc>
   </url><url>
-    <loc>/wushu/37/</loc>
+    <loc>//localhost:1313/wushu/37/</loc>
   </url><url>
-    <loc>/wushu/15/</loc>
+    <loc>//localhost:1313/wushu/15/</loc>
   </url><url>
-    <loc>/wushu/01/</loc>
+    <loc>//localhost:1313/wushu/01/</loc>
   </url><url>
-    <loc>/wushu/35/</loc>
+    <loc>//localhost:1313/wushu/35/</loc>
   </url><url>
-    <loc>/wushu/13/</loc>
+    <loc>//localhost:1313/wushu/13/</loc>
   </url><url>
-    <loc>/wushu/19/</loc>
+    <loc>//localhost:1313/wushu/19/</loc>
   </url><url>
-    <loc>/wushu/33/</loc>
+    <loc>//localhost:1313/wushu/33/</loc>
   </url><url>
-    <loc>/wushu/38/</loc>
+    <loc>//localhost:1313/wushu/38/</loc>
   </url><url>
-    <loc>/wushu/25/</loc>
+    <loc>//localhost:1313/wushu/25/</loc>
   </url><url>
-    <loc>/wushu/23/</loc>
+    <loc>//localhost:1313/wushu/23/</loc>
   </url><url>
-    <loc>/wushu/24/</loc>
+    <loc>//localhost:1313/wushu/24/</loc>
   </url><url>
-    <loc>/wushu/21/</loc>
+    <loc>//localhost:1313/wushu/21/</loc>
   </url><url>
-    <loc>/wushu/18/</loc>
+    <loc>//localhost:1313/wushu/18/</loc>
   </url><url>
-    <loc>/wushu/20/</loc>
+    <loc>//localhost:1313/wushu/20/</loc>
   </url><url>
-    <loc>/wushu/36/</loc>
+    <loc>//localhost:1313/wushu/36/</loc>
   </url>
 </urlset>
